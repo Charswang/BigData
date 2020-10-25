@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e356c-6d43-4a39-bbb1-e03bb495edbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/compressMapReduce/CompressMapOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compressMapReduce/CompressReduceOuput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/WritableWork/TextString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,7 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CompressReduceOuput">
+  <component name="RunManager" selected="Application.TextString">
     <configuration name="CompressMapOutput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="compressMapReduce.CompressMapOutput" />
       <module name="MapReduceWork" />
@@ -121,12 +120,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FilterOutputFormatTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="customOutputFormat.FilterOutputFormatTest" />
+    <configuration name="TextString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WritableWork.TextString" />
       <module name="MapReduceWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="customOutputFormat.*" />
+          <option name="PATTERN" value="WritableWork.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TextString" />
         <item itemvalue="Application.CompressReduceOuput" />
         <item itemvalue="Application.CompressMapOutput" />
         <item itemvalue="Application.DecompressTest" />
         <item itemvalue="Application.CompressTest" />
-        <item itemvalue="Application.FilterOutputFormatTest" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +157,8 @@
       <workItem from="1603521305411" duration="3568000" />
       <workItem from="1603526808062" duration="1316000" />
       <workItem from="1603537098565" duration="5760000" />
-      <workItem from="1603594693173" duration="1803000" />
+      <workItem from="1603594693173" duration="7556000" />
+      <workItem from="1603613117246" duration="3191000" />
     </task>
     <servers />
   </component>
