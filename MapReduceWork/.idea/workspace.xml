@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e356c-6d43-4a39-bbb1-e03bb495edbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/compressWork/CompressTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compressWork/DecompressTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/compressMapReduce/CompressMapOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/compressMapReduce/CompressReduceOuput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,7 +46,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -68,7 +68,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DecompressTest">
+  <component name="RunManager" selected="Application.CompressReduceOuput">
+    <configuration name="CompressMapOutput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="compressMapReduce.CompressMapOutput" />
+      <module name="MapReduceWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="compressMapReduce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompressReduceOuput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="compressMapReduce.CompressReduceOuput" />
+      <module name="MapReduceWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="compressMapReduce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CompressTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="compressWork.CompressTest" />
       <module name="MapReduceWork" />
@@ -108,25 +134,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="wordcount.WordCount" />
-      <module name="MapReduceWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="wordcount.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CompressReduceOuput" />
+        <item itemvalue="Application.CompressMapOutput" />
         <item itemvalue="Application.DecompressTest" />
         <item itemvalue="Application.CompressTest" />
         <item itemvalue="Application.FilterOutputFormatTest" />
-        <item itemvalue="Application.WordCount" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +157,8 @@
       <workItem from="1603507117924" duration="5550000" />
       <workItem from="1603521305411" duration="3568000" />
       <workItem from="1603526808062" duration="1316000" />
-      <workItem from="1603537098565" duration="3844000" />
+      <workItem from="1603537098565" duration="5760000" />
+      <workItem from="1603594693173" duration="1803000" />
     </task>
     <servers />
   </component>
