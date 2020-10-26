@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e356c-6d43-4a39-bbb1-e03bb495edbe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/case1_unique/UniqueWork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case1_unique/repetition1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case1_unique/repetition2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case2_TopN/TonNWork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case2_TopN/topn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MapReduceWork.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +72,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TextString">
+  <component name="RunManager" selected="Application.TonNWork">
     <configuration name="CompressMapOutput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="compressMapReduce.CompressMapOutput" />
       <module name="MapReduceWork" />
@@ -95,32 +99,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CompressTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="compressWork.CompressTest" />
-      <module name="MapReduceWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="compressWork.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DecompressTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="compressWork.DecompressTest" />
-      <module name="MapReduceWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="compressWork.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TextString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="WritableWork.TextString" />
       <module name="MapReduceWork" />
@@ -134,13 +112,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TonNWork" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="case2_TopN.TonNWork" />
+      <module name="MapReduceWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="case2_TopN.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UniqueWork" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="case1_unique.UniqueWork" />
+      <module name="MapReduceWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="case1_unique.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TonNWork" />
+        <item itemvalue="Application.UniqueWork" />
         <item itemvalue="Application.TextString" />
         <item itemvalue="Application.CompressReduceOuput" />
         <item itemvalue="Application.CompressMapOutput" />
-        <item itemvalue="Application.DecompressTest" />
-        <item itemvalue="Application.CompressTest" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +165,8 @@
       <workItem from="1603594693173" duration="7556000" />
       <workItem from="1603613117246" duration="3191000" />
       <workItem from="1603676050335" duration="1764000" />
-      <workItem from="1603677899474" duration="234000" />
+      <workItem from="1603677899474" duration="2476000" />
+      <workItem from="1603697868504" duration="6532000" />
     </task>
     <servers />
   </component>
