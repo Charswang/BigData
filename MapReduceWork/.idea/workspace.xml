@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e356c-6d43-4a39-bbb1-e03bb495edbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/case1_unique/UniqueWork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/case1_unique/repetition1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/case1_unique/repetition2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/case2_TopN/TonNWork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/case2_TopN/topn.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case3_Serializer/SerializerBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case3_Serializer/SerializerWork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case3_Serializer/phone_data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,18 +43,19 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/case3_Serializer" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WangHao\Works\BigData\MapReduceWork\src\main\java\case3_Serializer" />
+      <recent name="E:\IdeaWork\MapReduceWork\src\main\java\org\apache\hadoop\io\nativeio" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="customOutputFormat" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IdeaWork\MapReduceWork\src\main\java\org\apache\hadoop\io\nativeio" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -72,9 +70,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TonNWork">
-    <configuration name="CompressMapOutput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="compressMapReduce.CompressMapOutput" />
+  <component name="RunManager" selected="Application.SerializerWork">
+    <configuration name="CompressReduceOuput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="compressMapReduce.CompressReduceOuput" />
       <module name="MapReduceWork" />
       <extension name="coverage">
         <pattern>
@@ -86,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CompressReduceOuput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="compressMapReduce.CompressReduceOuput" />
+    <configuration name="SerializerWork" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="case3_Serializer.SerializerWork" />
       <module name="MapReduceWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="compressMapReduce.*" />
+          <option name="PATTERN" value="case3_Serializer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TonNWork" />
+        <item itemvalue="Application.SerializerWork" />
         <item itemvalue="Application.UniqueWork" />
+        <item itemvalue="Application.TonNWork" />
         <item itemvalue="Application.TextString" />
         <item itemvalue="Application.CompressReduceOuput" />
-        <item itemvalue="Application.CompressMapOutput" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +164,7 @@
       <workItem from="1603613117246" duration="3191000" />
       <workItem from="1603676050335" duration="1764000" />
       <workItem from="1603677899474" duration="2476000" />
-      <workItem from="1603697868504" duration="6532000" />
+      <workItem from="1603697868504" duration="11206000" />
     </task>
     <servers />
   </component>
