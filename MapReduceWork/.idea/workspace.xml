@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e356c-6d43-4a39-bbb1-e03bb495edbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/case4_WebLogKpi/KPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/case4_WebLogKpi/KpiStage" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/case4_WebLogKpi/PV/PvDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/case4_WebLogKpi/PV/PvMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/case4_WebLogKpi/PV/PvReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/customInputFormatTest/CustominputFormatTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/customInputFormatTest/CustomInputFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/customInputFormatTest/CustomInputFormat.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +69,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PvDriver">
+  <component name="RunManager" selected="Application.CustominputFormatTest">
+    <configuration name="CustominputFormatTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="customInputFormatTest.CustominputFormatTest" />
+      <module name="MapReduceWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="customInputFormatTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="KPI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="case4_WebLogKpi.KPI" />
       <module name="MapReduceWork" />
@@ -112,19 +122,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TonNWork" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="case2_TopN.TonNWork" />
-      <module name="MapReduceWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="case2_TopN.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UniqueWork" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="case1_unique.UniqueWork" />
       <module name="MapReduceWork" />
@@ -140,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CustominputFormatTest" />
         <item itemvalue="Application.PvDriver" />
         <item itemvalue="Application.KPI" />
         <item itemvalue="Application.SerializerWork" />
         <item itemvalue="Application.UniqueWork" />
-        <item itemvalue="Application.TonNWork" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +167,7 @@
       <workItem from="1603771899692" duration="2583000" />
       <workItem from="1603795814535" duration="597000" />
       <workItem from="1603851130740" duration="2185000" />
-      <workItem from="1603854618566" duration="8368000" />
+      <workItem from="1603854618566" duration="15869000" />
     </task>
     <servers />
   </component>

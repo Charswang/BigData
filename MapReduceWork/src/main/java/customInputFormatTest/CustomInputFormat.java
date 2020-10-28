@@ -1,8 +1,11 @@
 package customInputFormatTest;
 
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FSDataInputStream;
+import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.BytesWritable;
+import org.apache.hadoop.io.IOUtils;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.*;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
@@ -29,12 +32,15 @@ import java.io.IOException;
 public class CustomInputFormat {
     public static class WholeInputFormat extends FileInputFormat<Text, BytesWritable>{
         @Override
+        //将文件设置为不可分片。
         protected boolean isSplitable(JobContext context, Path filename) {
             return false;
         }
 
+        //重写createRecordReader方法返回自定义过的RecordReader
         public RecordReader<Text, BytesWritable> createRecordReader(InputSplit inputSplit, TaskAttemptContext taskAttemptContext) throws IOException, InterruptedException {
             WholeRecordReader wholeRecordReader = new WholeRecordReader();
+            //初始化RecordReader(输入分片,Context)
             wholeRecordReader.initialize(inputSplit,taskAttemptContext);
             return wholeRecordReader;
         }
@@ -43,22 +49,58 @@ public class CustomInputFormat {
 
         private Configuration conf;
         private FileSplit fileSplit;
+        private Boolean isProgress = false; //标记文件是否被处理。
+        private BytesWritable bytesWritable = new BytesWritable();
+        private Text text = new Text();
         public void initialize(InputSplit inputSplit, TaskAttemptContext taskAttemptContext) throws IOException, InterruptedException {
-            fileSplit = (FileSplit) inputSplit;
-            conf = taskAttemptContext.getConfiguration();
+            fileSplit = (FileSplit) inputSplit; //转换为文件输入分片
+            conf = taskAttemptContext.getConfiguration(); //配置信息
         }
 
+        /**
+         * 这个方法中，每个文件在不同的mapper(MapTesk)中，在第一个mapper(MapTesk)运行完之后，isProgress变成了true，所以没有办法再继续执行循环
+         * 所以再次以isProgress=false身份进来的时候，说明已经换了一个mapper(MapTesk)来运行了。
+         * @return
+         * @throws IOException
+         * @throws InterruptedException
+         */
         public boolean nextKeyValue() throws IOException, InterruptedException {
-            return false;
+            if (!isProgress){
+                //设置缓冲区,以便将二进制输入流存入缓冲区内
+                byte[] bytes = new byte[(int)fileSplit.getLength()];
+                //通过分片信息得出，文件所在路径
+                Path path = fileSplit.getPath();
+                //获取文件系统
+                FileSystem fs = path.getFileSystem(conf);
+                //通过文件系统得到相对应文件的输入流。
+                FSDataInputStream open = fs.open(path);
+                //按分片长度，将文件流信息输入到事先设置好的byte数组中。便于后续设置输入键值对的value
+                IOUtils.readFully(open,bytes,0,bytes.length);
 
+                //value存储的是byte数组，这一步就需要，使用到bytes缓冲区来设置输入的value
+                bytesWritable.set(bytes,0,bytes.length);
+                //key存储的是文件的路径
+                text.set(path.toString());
+
+                //关闭资源
+                IOUtils.closeStream(open);
+
+                //设置该文件已经被操作过
+                isProgress = true;
+
+                //继续尝试，看是否还有剩余的文件没有被操作过。
+                return true;
+            }
+            //如果文件都被操作过了，就不再往下进行了。
+            return false;
         }
 
         public Text getCurrentKey() throws IOException, InterruptedException {
-            return null;
+            return text;
         }
 
         public BytesWritable getCurrentValue() throws IOException, InterruptedException {
-            return null;
+            return bytesWritable;
         }
 
         public float getProgress() throws IOException, InterruptedException {
@@ -66,23 +108,6 @@ public class CustomInputFormat {
         }
 
         public void close() throws IOException {
-
-        }
-    }
-    public static void main(String[] args) {
-
-    }
-
-    public static class CustomInputFormatMapper extends Mapper<Text, BytesWritable, Text, BytesWritable>{
-        @Override
-        protected void map(Text key, BytesWritable value, Context context) throws IOException, InterruptedException {
-
-        }
-    }
-
-    public static class CustomInputFormatReducer extends Reducer<Text, BytesWritable, Text, BytesWritable>{
-        @Override
-        protected void reduce(Text key, Iterable<BytesWritable> values, Context context) throws IOException, InterruptedException {
 
         }
     }
