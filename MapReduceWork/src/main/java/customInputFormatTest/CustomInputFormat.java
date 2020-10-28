@@ -53,6 +53,7 @@ public class CustomInputFormat {
         private BytesWritable bytesWritable = new BytesWritable();
         private Text text = new Text();
         public void initialize(InputSplit inputSplit, TaskAttemptContext taskAttemptContext) throws IOException, InterruptedException {
+            //在这里分为了几个小文件，每个小文件占一个数据块，每个小文件占一个切片，占一个maptask
             fileSplit = (FileSplit) inputSplit; //转换为文件输入分片
             conf = taskAttemptContext.getConfiguration(); //配置信息
         }

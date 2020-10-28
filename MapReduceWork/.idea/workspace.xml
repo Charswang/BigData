@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e356c-6d43-4a39-bbb1-e03bb495edbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/customInputFormatTest/CustominputFormatTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/customInputFormatTest/CustomInputFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/customInputFormatTest/CustomInputFormat.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -167,7 +165,7 @@
       <workItem from="1603771899692" duration="2583000" />
       <workItem from="1603795814535" duration="597000" />
       <workItem from="1603851130740" duration="2185000" />
-      <workItem from="1603854618566" duration="15869000" />
+      <workItem from="1603854618566" duration="16685000" />
     </task>
     <servers />
   </component>
