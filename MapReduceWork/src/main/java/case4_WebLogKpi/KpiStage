@@ -1,0 +1,5 @@
+PV(PageView): 页面访问量统计
+IP: 页面独立IP的访问量统计
+Time: 用户每小时PV的统计
+Source: 用户来源域名的统计
+Browser: 用户的访问设备(浏览器)统计
