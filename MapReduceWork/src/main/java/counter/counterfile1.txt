@@ -1,0 +1,5 @@
+tom	1	28
+john	0	26
+jim	1
+kaka	1	22
+lily	0	29	22

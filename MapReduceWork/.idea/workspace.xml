@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e356c-6d43-4a39-bbb1-e03bb495edbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MultipleOutputsWork/MultipleOutputsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/counter/CustomCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/counter/counterfile1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,7 +43,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/case3_Serializer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/counter" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -68,7 +70,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MultipleOutputsTest">
+  <component name="RunManager" selected="Application.CustomCounter">
+    <configuration name="CustomCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="counter.CustomCounter" />
+      <module name="MapReduceWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="counter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CustominputFormatTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="customInputFormatTest.CustominputFormatTest" />
       <module name="MapReduceWork" />
@@ -121,26 +136,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SerializerWork" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="case3_Serializer.SerializerWork" />
-      <module name="MapReduceWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="case3_Serializer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CustomCounter" />
         <item itemvalue="Application.MultipleOutputsTest" />
         <item itemvalue="Application.CustominputFormatTest" />
         <item itemvalue="Application.PvDriver" />
         <item itemvalue="Application.KPI" />
-        <item itemvalue="Application.SerializerWork" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +169,9 @@
       <workItem from="1603795814535" duration="597000" />
       <workItem from="1603851130740" duration="2185000" />
       <workItem from="1603854618566" duration="16997000" />
-      <workItem from="1603938114679" duration="4662000" />
+      <workItem from="1603938114679" duration="6347000" />
+      <workItem from="1604029742164" duration="3173000" />
+      <workItem from="1604109163182" duration="3666000" />
     </task>
     <servers />
   </component>
