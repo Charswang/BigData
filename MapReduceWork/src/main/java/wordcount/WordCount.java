@@ -27,9 +27,9 @@ public class WordCount {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(LongWritable.class);
 
-        Path inpath = new Path("E:\\input\\wordcount.txt");
+        Path inpath = new Path("D:\\WangHao\\input\\WordCount.txt");
         FileInputFormat.addInputPath(job,inpath);
-        Path outpath = new Path("E:\\output");
+        Path outpath = new Path("D:\\WangHao\\output");
         if (outpath.getFileSystem(conf).exists(outpath)){
             outpath.getFileSystem(conf).delete(outpath,true);
         }

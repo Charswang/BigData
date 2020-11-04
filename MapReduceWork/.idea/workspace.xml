@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e356c-6d43-4a39-bbb1-e03bb495edbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MapJoin/MapJoinTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MapJoin/order.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MapJoin/product.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/case4_WebLogKpi/PVTopTen/PVTopTenTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/join/TableBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reducejoin/TableBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/join/TableDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reducejoin/TableDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/join/TableMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reducejoin/TableMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/join/TableReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reducejoin/TableReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/customOutputFormat/CustomRecordWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customOutputFormat/CustomRecordWriter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormatTest$FilterOutputFormatMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormatTest$FilterOutputFormatMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormatTest$FilterOutputFormatReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormatTest$FilterOutputFormatReducer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormatTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormatTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$CachedUid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$CachedUid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$CacheManipulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$CacheManipulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$CachedName.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$CachedName.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$IdCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$IdCache.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$NoMlockCacheManipulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$NoMlockCacheManipulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$Stat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$Stat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$Windows$AccessRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$Windows$AccessRight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$Windows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$Windows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wordcount/WordCount$WordCountMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wordcount/WordCount$WordCountMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wordcount/WordCount$WordCountReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wordcount/WordCount$WordCountReducer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wordcount/WordCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wordcount/WordCount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wordcount/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wordcount/WordCount.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,20 +70,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MapJoinTest">
-    <configuration name="CustomCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="counter.CustomCounter" />
-      <module name="MapReduceWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="counter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.WordCount">
     <configuration name="MapJoinTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MapJoin.MapJoinTest" />
       <module name="MapReduceWork" />
@@ -156,13 +117,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="wordcount.WordCount" />
+      <module name="MapReduceWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="wordcount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WordCount" />
         <item itemvalue="Application.MapJoinTest" />
         <item itemvalue="Application.PVTopTenTest" />
         <item itemvalue="Application.TrafficStatistics" />
         <item itemvalue="Application.TableDriver" />
-        <item itemvalue="Application.CustomCounter" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +169,7 @@
       <workItem from="1604296661726" duration="2055000" />
       <workItem from="1604303479897" duration="2779000" />
       <workItem from="1604399142522" duration="1339000" />
-      <workItem from="1604456004057" duration="21847000" />
+      <workItem from="1604456004057" duration="23837000" />
     </task>
     <servers />
   </component>
