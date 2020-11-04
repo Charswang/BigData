@@ -1,4 +1,4 @@
-package join;
+package Reducejoin;
 
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.hadoop.io.NullWritable;

@@ -2,11 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e356c-6d43-4a39-bbb1-e03bb495edbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/join/TableBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/join/TableDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/join/TableMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/join/TableReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MapJoin/MapJoinTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MapJoin/order.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MapJoin/product.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case4_WebLogKpi/PVTopTen/PVTopTenTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/join/TableBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reducejoin/TableBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/join/TableDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reducejoin/TableDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/join/TableMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reducejoin/TableMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/join/TableReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reducejoin/TableReducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customOutputFormat/CustomRecordWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customOutputFormat/CustomRecordWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormatTest$FilterOutputFormatMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormatTest$FilterOutputFormatMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormatTest$FilterOutputFormatReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormatTest$FilterOutputFormatReducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormatTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormatTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$CachedUid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$CachedUid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$CacheManipulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$CacheManipulator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$CachedName.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$CachedName.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$IdCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$IdCache.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$NoMlockCacheManipulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$NoMlockCacheManipulator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$Stat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$Stat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$Windows$AccessRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$Windows$AccessRight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$Windows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$Windows.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/wordcount/WordCount$WordCountMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wordcount/WordCount$WordCountMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/wordcount/WordCount$WordCountReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wordcount/WordCount$WordCountReducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/wordcount/WordCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wordcount/WordCount.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,20 +67,21 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/counter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/MapJoin" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="customOutputFormat" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WangHao\Works\BigData\MapReduceWork\src\main\java\MapJoin" />
       <recent name="D:\WangHao\Works\BigData\MapReduceWork\src\main\java\counter" />
       <recent name="D:\WangHao\Works\BigData\MapReduceWork\src\main\java\case3_Serializer" />
       <recent name="E:\IdeaWork\MapReduceWork\src\main\java\org\apache\hadoop\io\nativeio" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="customOutputFormat" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -72,7 +96,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TableDriver">
+  <component name="RunManager" selected="Application.MapJoinTest">
     <configuration name="CustomCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="counter.CustomCounter" />
       <module name="MapReduceWork" />
@@ -86,12 +110,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustominputFormatTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="customInputFormatTest.CustominputFormatTest" />
+    <configuration name="MapJoinTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MapJoin.MapJoinTest" />
       <module name="MapReduceWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="customInputFormatTest.*" />
+          <option name="PATTERN" value="MapJoin.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,25 +123,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultipleOutputsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MultipleOutputsWork.MultipleOutputsTest" />
+    <configuration name="PVTopTenTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="case4_WebLogKpi.PVTopTen.PVTopTenTest" />
       <module name="MapReduceWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MultipleOutputsWork.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PvDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="case4_WebLogKpi.PV.PvDriver" />
-      <module name="MapReduceWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="case4_WebLogKpi.PV.*" />
+          <option name="PATTERN" value="case4_WebLogKpi.PVTopTen.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,11 +137,11 @@
       </method>
     </configuration>
     <configuration name="TableDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="join.TableDriver" />
+      <option name="MAIN_CLASS_NAME" value="Reducejoin.TableDriver" />
       <module name="MapReduceWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="join.*" />
+          <option name="PATTERN" value="Reducejoin.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,13 +149,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TrafficStatistics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TrafficStatistics" />
+      <module name="MapReduceWork" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MapJoinTest" />
+        <item itemvalue="Application.PVTopTenTest" />
+        <item itemvalue="Application.TrafficStatistics" />
         <item itemvalue="Application.TableDriver" />
         <item itemvalue="Application.CustomCounter" />
-        <item itemvalue="Application.MultipleOutputsTest" />
-        <item itemvalue="Application.CustominputFormatTest" />
-        <item itemvalue="Application.PvDriver" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +191,11 @@
       <workItem from="1603854618566" duration="16997000" />
       <workItem from="1603938114679" duration="6347000" />
       <workItem from="1604029742164" duration="3173000" />
-      <workItem from="1604109163182" duration="8787000" />
+      <workItem from="1604109163182" duration="10517000" />
+      <workItem from="1604296661726" duration="2055000" />
+      <workItem from="1604303479897" duration="2779000" />
+      <workItem from="1604399142522" duration="1339000" />
+      <workItem from="1604456004057" duration="21847000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-package join;
+package Reducejoin;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
