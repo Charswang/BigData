@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e356c-6d43-4a39-bbb1-e03bb495edbe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/case4_WebLogKpi/TimePV1/TimePVDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case4_WebLogKpi/TimePV1/TimePVMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case4_WebLogKpi/TimePV1/TimePVReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case4_WebLogKpi/TimePV2/PV2Bean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case4_WebLogKpi/TimePV2/PV2Comparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case4_WebLogKpi/TimePV2/PV2Partitioner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case4_WebLogKpi/TimePV2/TimePV2Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case4_WebLogKpi/TimePV2/TimePV2Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case4_WebLogKpi/TimePV2/TimePV2Reducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wordcount/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wordcount/WordCount.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +78,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WordCount">
+  <component name="RunManager" selected="Application.TimePV2Driver">
     <configuration name="MapJoinTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MapJoin.MapJoinTest" />
       <module name="MapReduceWork" />
@@ -97,12 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TableDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Reducejoin.TableDriver" />
+    <configuration name="TimePV2Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="case4_WebLogKpi.TimePV2.TimePV2Driver" />
       <module name="MapReduceWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Reducejoin.*" />
+          <option name="PATTERN" value="case4_WebLogKpi.TimePV2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,9 +118,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrafficStatistics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TrafficStatistics" />
+    <configuration name="TimePVDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="case4_WebLogKpi.TimePV1.TimePVDriver" />
       <module name="MapReduceWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="case4_WebLogKpi.TimePV1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -132,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TimePV2Driver" />
+        <item itemvalue="Application.TimePVDriver" />
         <item itemvalue="Application.WordCount" />
         <item itemvalue="Application.MapJoinTest" />
         <item itemvalue="Application.PVTopTenTest" />
-        <item itemvalue="Application.TrafficStatistics" />
-        <item itemvalue="Application.TableDriver" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +183,8 @@
       <workItem from="1604296661726" duration="2055000" />
       <workItem from="1604303479897" duration="2779000" />
       <workItem from="1604399142522" duration="1339000" />
-      <workItem from="1604456004057" duration="23837000" />
+      <workItem from="1604456004057" duration="27204000" />
+      <workItem from="1604542490977" duration="13220000" />
     </task>
     <servers />
   </component>
