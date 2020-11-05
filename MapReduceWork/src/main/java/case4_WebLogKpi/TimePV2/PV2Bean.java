@@ -18,12 +18,22 @@ public class PV2Bean implements Writable, WritableComparable<PV2Bean> {
     private String ip;
     private String time;
 
+    /**
+     * 序列化
+     * @param dataOutput
+     * @throws IOException
+     */
     @Override
     public void write(DataOutput dataOutput) throws IOException {
         dataOutput.writeUTF(ip);
         dataOutput.writeUTF(time);
     }
 
+    /**
+     * 反序列化
+     * @param dataInput
+     * @throws IOException
+     */
     @Override
     public void readFields(DataInput dataInput) throws IOException {
         ip = dataInput.readUTF();
