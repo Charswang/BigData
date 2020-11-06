@@ -15,6 +15,14 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 import java.io.IOException;
 
+/**
+ * 统计多个文件中单词，分别在每个文件中所出现的次数
+ *
+ * eg输出: Mapreduce		file1.txt->1
+ *        Mapreduce         file2.txt->1
+ *        Mapreduce         file3.txt->2
+ * eg表示：Mapreduce在file1.txt中出现1次，在file2.txt中出现1次，在file3.txt中出现2次
+ */
 public class ReverseIndexWork {
     public static void main(String[] args) throws InterruptedException, IOException, ClassNotFoundException {
         Configuration conf = new Configuration();

@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e356c-6d43-4a39-bbb1-e03bb495edbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ReverseIndex/ReverseIndexWork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ReverseIndex/ReverseIndexWork2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ReverseIndex/file1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ReverseIndex/file2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ReverseIndex/file3.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MultipleOutputsWork/MultipleOutputsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MultipleOutputsWork/MultipleOutputsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReverseIndex/ReverseIndexWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReverseIndex/ReverseIndexWork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReverseIndex/ReverseIndexWork2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReverseIndex/ReverseIndexWork2.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +181,7 @@
       <workItem from="1604542490977" duration="14180000" />
       <workItem from="1604636065759" duration="72000" />
       <workItem from="1604636661612" duration="84000" />
-      <workItem from="1604636781333" duration="9146000" />
+      <workItem from="1604636781333" duration="9356000" />
     </task>
     <servers />
   </component>

@@ -80,7 +80,7 @@ public class ReverseIndexWork2 {
                 //map中不存在键，则添加上键
                 if (!treeMap.keySet().contains(fileName)){
 
-                    //一定要注意这里，如果map中没有文件名，那么一定要重置sum=0，不然，sum会在上一个文件的单词统计数量上继续累加。
+                    //在这里出了错！！一定要注意这里，如果map中没有文件名，那么一定要重置sum=0，不然，sum会在上一个文件的单词统计数量上继续累加。
                     sum = 0; //！！！！！！！！！！
                     treeMap.put(fileName,0);
                 }
