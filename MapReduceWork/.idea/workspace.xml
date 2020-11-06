@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e356c-6d43-4a39-bbb1-e03bb495edbe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/case4_WebLogKpi/TimePV2/PV2Bean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/case4_WebLogKpi/TimePV2/PV2Bean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SqlWork/GroupBy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SqlWork/Statistical.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/case4_WebLogKpi/TimePV2/PV2Partitioner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/case4_WebLogKpi/TimePV2/PV2Partitioner.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,13 +72,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TimePV2Driver">
-    <configuration name="MapJoinTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MapJoin.MapJoinTest" />
+  <component name="RunManager" selected="Application.Statistical">
+    <configuration name="GroupBy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SqlWork.GroupBy" />
       <module name="MapReduceWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MapJoin.*" />
+          <option name="PATTERN" value="SqlWork.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PVTopTenTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="case4_WebLogKpi.PVTopTen.PVTopTenTest" />
+    <configuration name="Statistical" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SqlWork.Statistical" />
       <module name="MapReduceWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="case4_WebLogKpi.PVTopTen.*" />
+          <option name="PATTERN" value="SqlWork.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Statistical" />
+        <item itemvalue="Application.GroupBy" />
         <item itemvalue="Application.TimePV2Driver" />
         <item itemvalue="Application.TimePVDriver" />
         <item itemvalue="Application.WordCount" />
-        <item itemvalue="Application.MapJoinTest" />
-        <item itemvalue="Application.PVTopTenTest" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +178,10 @@
       <workItem from="1604303479897" duration="2779000" />
       <workItem from="1604399142522" duration="1339000" />
       <workItem from="1604456004057" duration="27204000" />
-      <workItem from="1604542490977" duration="13338000" />
+      <workItem from="1604542490977" duration="14180000" />
+      <workItem from="1604636065759" duration="72000" />
+      <workItem from="1604636661612" duration="84000" />
+      <workItem from="1604636781333" duration="3563000" />
     </task>
     <servers />
   </component>
