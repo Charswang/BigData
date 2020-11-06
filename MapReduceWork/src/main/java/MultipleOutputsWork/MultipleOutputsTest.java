@@ -81,6 +81,7 @@ public class MultipleOutputsTest {
             }
             //使用MultipleOutputs实例.write(key,value,baseOutputPath)来代替context.write(key,value)方法
             mos.write(key,v,key.toString());
+//            mos.write(key,v,v.get()+"");
         }
 
     }
