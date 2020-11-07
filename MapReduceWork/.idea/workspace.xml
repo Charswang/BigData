@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e356c-6d43-4a39-bbb1-e03bb495edbe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/case5_TeleDataTransform/DBHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case5_TeleDataTransform/LogMR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case5_TeleDataTransform/PhoneLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case5_TeleDataTransform/a.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReverseIndex/ReverseIndexWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReverseIndex/ReverseIndexWork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReverseIndex/ReverseIndexWork2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReverseIndex/ReverseIndexWork2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,22 +45,22 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/ReverseIndex" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/case5_TeleDataTransform" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.46896553" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="customOutputFormat" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WangHao\Works\BigData\MapReduceWork\src\main\java\case5_TeleDataTransform" />
       <recent name="D:\WangHao\Works\BigData\MapReduceWork\src\main\java\ReverseIndex" />
       <recent name="D:\WangHao\Works\BigData\MapReduceWork\src\main\java\MapJoin" />
       <recent name="D:\WangHao\Works\BigData\MapReduceWork\src\main\java\counter" />
       <recent name="D:\WangHao\Works\BigData\MapReduceWork\src\main\java\case3_Serializer" />
-      <recent name="E:\IdeaWork\MapReduceWork\src\main\java\org\apache\hadoop\io\nativeio" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="customOutputFormat" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -72,13 +75,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ReverseIndexWork2">
-    <configuration name="GroupBy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SqlWork.GroupBy" />
+  <component name="RunManager" selected="Application.LogMR">
+    <configuration name="LogMR" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="case5_TeleDataTransform.LogMR" />
       <module name="MapReduceWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SqlWork.*" />
+          <option name="PATTERN" value="case5_TeleDataTransform.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LogMR" />
         <item itemvalue="Application.ReverseIndexWork2" />
         <item itemvalue="Application.ReverseIndexWork" />
         <item itemvalue="Application.MultipleOutputsTest" />
         <item itemvalue="Application.Statistical" />
-        <item itemvalue="Application.GroupBy" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +184,8 @@
       <workItem from="1604542490977" duration="14180000" />
       <workItem from="1604636065759" duration="72000" />
       <workItem from="1604636661612" duration="84000" />
-      <workItem from="1604636781333" duration="9356000" />
+      <workItem from="1604636781333" duration="12423000" />
+      <workItem from="1604713749536" duration="11202000" />
     </task>
     <servers />
   </component>
