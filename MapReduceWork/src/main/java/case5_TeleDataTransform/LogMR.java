@@ -20,6 +20,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 20/11/7 by wanghao
+ *
  * 电信数据清洗
  * https://www.educoder.net/shixuns/zv4whj7u/challenges
  *
@@ -103,7 +105,7 @@ public class LogMR {
 
                 long startTimestamp = Long.parseLong(split[2]);
                 long endTimestamp = Long.parseLong(split[3]);
-                String startTime = sdf.format(startTimestamp*1000);
+                String startTime = sdf.format(startTimestamp*1000); //将秒转换为毫秒.
                 String endTime = sdf.format(endTimestamp*1000);
 
                 long timeLen = endTimestamp - startTimestamp;

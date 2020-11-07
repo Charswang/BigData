@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e356c-6d43-4a39-bbb1-e03bb495edbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/case5_TeleDataTransform/DBHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/case5_TeleDataTransform/LogMR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/case5_TeleDataTransform/PhoneLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/case5_TeleDataTransform/a.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/case5_TeleDataTransform/LogMR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/case5_TeleDataTransform/LogMR.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +181,7 @@
       <workItem from="1604636065759" duration="72000" />
       <workItem from="1604636661612" duration="84000" />
       <workItem from="1604636781333" duration="12423000" />
-      <workItem from="1604713749536" duration="11202000" />
+      <workItem from="1604713749536" duration="11449000" />
     </task>
     <servers />
   </component>
