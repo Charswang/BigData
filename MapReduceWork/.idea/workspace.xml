@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e356c-6d43-4a39-bbb1-e03bb495edbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/case6_WeatherDataTransform/Weather.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/case6_WeatherDataTransform/WeatherMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/case6_WeatherDataTransform/WeatherReduce.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/case6_WeatherDataTransform/WeatherTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case6_EmploymentTransform/DBHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case6_EmploymentTransform/Employment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case6_EmploymentTransform/JsonMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case6_EmploymentTransform/JsonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case6_EmploymentTransform/a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hadoop依赖.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hadoop依赖.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,22 +47,22 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/case5_TeleDataTransform" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/case6_EmploymentTransform" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.46896553" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="customOutputFormat" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WangHao\Works\BigData\MapReduceWork\src\main\java\case6_EmploymentTransform" />
+      <recent name="D:\WangHao\Works\BigData\MapReduceWork\src\main\java\case6_WeatherDataTransform" />
       <recent name="D:\WangHao\Works\BigData\MapReduceWork\src\main\java\case5_TeleDataTransform" />
       <recent name="D:\WangHao\Works\BigData\MapReduceWork\src\main\java\ReverseIndex" />
       <recent name="D:\WangHao\Works\BigData\MapReduceWork\src\main\java\MapJoin" />
-      <recent name="D:\WangHao\Works\BigData\MapReduceWork\src\main\java\counter" />
-      <recent name="D:\WangHao\Works\BigData\MapReduceWork\src\main\java\case3_Serializer" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="customOutputFormat" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -74,13 +77,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WeatherTest">
-    <configuration name="LogMR" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="case5_TeleDataTransform.LogMR" />
+  <component name="RunManager" selected="Application.JsonTest">
+    <configuration name="JsonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="case6_EmploymentTransform.JsonTest" />
       <module name="MapReduceWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="case5_TeleDataTransform.*" />
+          <option name="PATTERN" value="case6_EmploymentTransform.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultipleOutputsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MultipleOutputsWork.MultipleOutputsTest" />
+    <configuration name="LogMR" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="case5_TeleDataTransform.LogMR" />
       <module name="MapReduceWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MultipleOutputsWork.*" />
+          <option name="PATTERN" value="case5_TeleDataTransform.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JsonTest" />
         <item itemvalue="Application.WeatherTest" />
         <item itemvalue="Application.LogMR" />
         <item itemvalue="Application.ReverseIndexWork2" />
         <item itemvalue="Application.ReverseIndexWork" />
-        <item itemvalue="Application.MultipleOutputsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +189,7 @@
       <workItem from="1604636781333" duration="12423000" />
       <workItem from="1604713749536" duration="16182000" />
       <workItem from="1604748953597" duration="41000" />
-      <workItem from="1604800373225" duration="1889000" />
+      <workItem from="1604800373225" duration="8029000" />
     </task>
     <servers />
   </component>
