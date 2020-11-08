@@ -1,4 +1,4 @@
-package case6_EmploymentTransform;
+package case7_EmploymentTransform;
 
 import com.alibaba.fastjson.JSONObject;
 import org.apache.hadoop.io.LongWritable;

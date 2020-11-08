@@ -1,4 +1,4 @@
-package case6_EmploymentTransform;
+package case7_EmploymentTransform;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

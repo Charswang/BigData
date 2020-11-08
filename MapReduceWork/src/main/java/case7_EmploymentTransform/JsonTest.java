@@ -1,4 +1,4 @@
-package case6_EmploymentTransform;
+package case7_EmploymentTransform;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
