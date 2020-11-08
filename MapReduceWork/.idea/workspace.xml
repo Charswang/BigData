@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e356c-6d43-4a39-bbb1-e03bb495edbe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/case6_WeatherDataTransform/Weather.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case6_WeatherDataTransform/WeatherMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case6_WeatherDataTransform/WeatherReduce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/case6_WeatherDataTransform/WeatherTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/case5_TeleDataTransform/LogMR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/case5_TeleDataTransform/LogMR.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LogMR">
+  <component name="RunManager" selected="Application.WeatherTest">
     <configuration name="LogMR" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="case5_TeleDataTransform.LogMR" />
       <module name="MapReduceWork" />
@@ -124,12 +127,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Statistical" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SqlWork.Statistical" />
+    <configuration name="WeatherTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="case6_WeatherDataTransform.WeatherTest" />
       <module name="MapReduceWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SqlWork.*" />
+          <option name="PATTERN" value="case6_WeatherDataTransform.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WeatherTest" />
         <item itemvalue="Application.LogMR" />
         <item itemvalue="Application.ReverseIndexWork2" />
         <item itemvalue="Application.ReverseIndexWork" />
         <item itemvalue="Application.MultipleOutputsTest" />
-        <item itemvalue="Application.Statistical" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +184,9 @@
       <workItem from="1604636065759" duration="72000" />
       <workItem from="1604636661612" duration="84000" />
       <workItem from="1604636781333" duration="12423000" />
-      <workItem from="1604713749536" duration="11449000" />
+      <workItem from="1604713749536" duration="16182000" />
+      <workItem from="1604748953597" duration="41000" />
+      <workItem from="1604800373225" duration="1889000" />
     </task>
     <servers />
   </component>
