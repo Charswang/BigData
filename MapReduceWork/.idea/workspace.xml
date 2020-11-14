@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e356c-6d43-4a39-bbb1-e03bb495edbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/case6_EmploymentTransform/DBHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/case6_EmploymentTransform/Employment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/case6_EmploymentTransform/JsonMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/case6_EmploymentTransform/JsonTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/case6_EmploymentTransform/a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SortWork/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SortWork/InsertionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SortWork/SelectionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SortWork/ShellSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Test1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hadoop依赖.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hadoop依赖.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,13 +76,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JsonTest">
-    <configuration name="JsonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="case6_EmploymentTransform.JsonTest" />
+  <component name="RunManager" selected="Application.Test1">
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SortWork.BubbleSort" />
       <module name="MapReduceWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="case6_EmploymentTransform.*" />
+          <option name="PATTERN" value="SortWork.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogMR" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="case5_TeleDataTransform.LogMR" />
+    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SortWork.InsertionSort" />
       <module name="MapReduceWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="case5_TeleDataTransform.*" />
+          <option name="PATTERN" value="SortWork.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseIndexWork" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ReverseIndex.ReverseIndexWork" />
+    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SortWork.SelectionSort" />
       <module name="MapReduceWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ReverseIndex.*" />
+          <option name="PATTERN" value="SortWork.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,39 +116,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseIndexWork2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ReverseIndex.ReverseIndexWork2" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="MapReduceWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ReverseIndex.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WeatherTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="case6_WeatherDataTransform.WeatherTest" />
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test1" />
       <module name="MapReduceWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="case6_WeatherDataTransform.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JsonTest" />
-        <item itemvalue="Application.WeatherTest" />
-        <item itemvalue="Application.LogMR" />
-        <item itemvalue="Application.ReverseIndexWork2" />
-        <item itemvalue="Application.ReverseIndexWork" />
+        <item itemvalue="Application.Test1" />
+        <item itemvalue="Application.SelectionSort" />
+        <item itemvalue="Application.InsertionSort" />
+        <item itemvalue="Application.BubbleSort" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +176,13 @@
       <workItem from="1604636781333" duration="12423000" />
       <workItem from="1604713749536" duration="16182000" />
       <workItem from="1604748953597" duration="41000" />
-      <workItem from="1604800373225" duration="8029000" />
+      <workItem from="1604800373225" duration="10610000" />
+      <workItem from="1604883048851" duration="15881000" />
+      <workItem from="1604989801884" duration="2444000" />
+      <workItem from="1605089686192" duration="6831000" />
+      <workItem from="1605155713600" duration="3110000" />
+      <workItem from="1605239103067" duration="1908000" />
+      <workItem from="1605324142965" duration="11326000" />
     </task>
     <servers />
   </component>
