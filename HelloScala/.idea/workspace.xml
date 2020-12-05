@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a729d1f-9d18-4d99-9dad-5fccfb46dc27" name="Default Changelist" comment="" />
+    <list default="true" id="1a729d1f-9d18-4d99-9dad-5fccfb46dc27" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../MapReduceWork/src/main/java/SortWork/LeetcodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloScala.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduceWork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduceWork/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduceWork/src/main/java/SortWork/ShellSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduceWork/src/main/java/SortWork/ShellSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduceWork/target/classes/customOutputFormat/CustomRecordWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduceWork/target/classes/customOutputFormat/CustomRecordWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduceWork/target/classes/customOutputFormat/FilterOutputFormat.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduceWork/target/classes/customOutputFormat/FilterOutputFormat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduceWork/target/classes/customOutputFormat/FilterOutputFormatTest$FilterOutputFormatMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduceWork/target/classes/customOutputFormat/FilterOutputFormatTest$FilterOutputFormatMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduceWork/target/classes/customOutputFormat/FilterOutputFormatTest$FilterOutputFormatReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduceWork/target/classes/customOutputFormat/FilterOutputFormatTest$FilterOutputFormatReducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduceWork/target/classes/customOutputFormat/FilterOutputFormatTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduceWork/target/classes/customOutputFormat/FilterOutputFormatTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduceWork/target/classes/org/apache/hadoop/io/nativeio/NativeIO$CachedUid.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduceWork/target/classes/org/apache/hadoop/io/nativeio/NativeIO$CachedUid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduceWork/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$CacheManipulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduceWork/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$CacheManipulator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduceWork/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$CachedName.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduceWork/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$CachedName.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduceWork/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$IdCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduceWork/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$IdCache.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduceWork/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$NoMlockCacheManipulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduceWork/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$NoMlockCacheManipulator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduceWork/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$Stat.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduceWork/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$Stat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduceWork/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduceWork/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduceWork/target/classes/org/apache/hadoop/io/nativeio/NativeIO$Windows$AccessRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduceWork/target/classes/org/apache/hadoop/io/nativeio/NativeIO$Windows$AccessRight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduceWork/target/classes/org/apache/hadoop/io/nativeio/NativeIO$Windows.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduceWork/target/classes/org/apache/hadoop/io/nativeio/NativeIO$Windows.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduceWork/target/classes/org/apache/hadoop/io/nativeio/NativeIO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduceWork/target/classes/org/apache/hadoop/io/nativeio/NativeIO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduceWork/target/classes/wordcount/WordCount$WordCountMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduceWork/target/classes/wordcount/WordCount$WordCountMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduceWork/target/classes/wordcount/WordCount$WordCountReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduceWork/target/classes/wordcount/WordCount$WordCountReducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduceWork/target/classes/wordcount/WordCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduceWork/target/classes/wordcount/WordCount.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +55,11 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1iOOmo19DuoCtwFPnYzNeXegExZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -81,10 +107,25 @@
       <workItem from="1601860978719" duration="8118000" />
       <workItem from="1601947856863" duration="6735000" />
       <workItem from="1603507060265" duration="12000" />
+      <workItem from="1607155051371" duration="97000" />
+      <workItem from="1607155424641" duration="15000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
