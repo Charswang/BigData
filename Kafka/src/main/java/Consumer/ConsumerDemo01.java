@@ -15,6 +15,9 @@ public class ConsumerDemo01 {
         properties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,"org.apache.kafka.common.serialization.StringDeserializer"); // value值反序列化
         properties.put(ConsumerConfig.GROUP_ID_CONFIG,"testkafka"); // 消费者组
 
+        // 在1、换组之后；2、消费者挂掉之后，以至于以前的数据被删除，设置下面的属性才可以从目前主题中，从最早的信息开始拉取。
+        properties.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,"earlist");
+
         // 创建消费者
         KafkaConsumer kafkaConsumer = new KafkaConsumer<String,String>(properties);
 
@@ -29,5 +32,18 @@ public class ConsumerDemo01 {
                 System.out.println(consumerRecord.key() + "--" + consumerRecord.value());
             }
         }
+
+        /**
+         * 消费者保存offest读取问题，手动提交offest相关。
+         */
+        // 当把自动提交offest属性关闭之后【properties.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG,false)】，只要没有提交offest，每次打开该消费者组进行消费时，都是从上一次提交的offest位置开始读取
+        // 比如，上一次提交的offest为90，这一次生产者程序KafkaRpoducerDemo01.java运行了一次，那么消费者控制台会打印90-100，这时，如果不手动提交offest到外部集群的话，在关闭该消费者之后，重新打开，仍然是从90开始消费，打印出来90-100
+        // 然后，只要消费者不关闭，虽然已经读取到的90-100中的100位置上的offest没有提交，但是内存中已经记下了当前拉取到的offest，每次轮循拉去的时候都是从内存中记下的100开始拉取。
+        // 否则从90开始拉取的话就不是从内存中找到90，而是去外部集群中查找offest，这样会导致速度变得很慢。
+
+        /**
+         * 手动提交offest：同步提交(commitSync),异步提交(commitAsync)
+         */
+        //
     }
 }
