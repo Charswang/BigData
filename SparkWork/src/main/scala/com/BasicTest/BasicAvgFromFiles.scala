@@ -1,3 +1,5 @@
+package com.BasicTest
+
 import java.io.File
 
 import org.apache.spark.SparkContext

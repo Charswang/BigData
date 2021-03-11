@@ -1,3 +1,5 @@
+package com.BasicTest
+
 import org.apache.spark.SparkContext
 
 object BasicSum {

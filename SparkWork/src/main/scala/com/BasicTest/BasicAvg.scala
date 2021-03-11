@@ -1,4 +1,4 @@
-import org.apache.spark.SparkContext
+package com.BasicTest
 
 object BasicAvg {
   def main(args: Array[String]): Unit = {

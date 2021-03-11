@@ -1,6 +1,8 @@
-import org.apache.spark.SparkContext
+package com.BasicTest
+
 import org.apache.hadoop.io.Text
 import org.apache.hadoop.mapred.KeyValueTextInputFormat
+import org.apache.spark.SparkContext
 
 /**
  * 使用Hadoop中的KeyValueTextInput输入方式读取文件

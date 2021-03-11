@@ -1,4 +1,4 @@
-import org.apache.spark.SparkContext
+package com.BasicTest
 
 /**
  * 对两个RDD进行Filter，然后进行union合并操作

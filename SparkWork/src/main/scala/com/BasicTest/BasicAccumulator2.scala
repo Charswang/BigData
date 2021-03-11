@@ -1,6 +1,4 @@
-import java.io.File
-
-import org.apache.spark.SparkContext
+package com.BasicTest
 
 object BasicAccumulator2 {
   def main(args: Array[String]) {
