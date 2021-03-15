@@ -1,5 +1,7 @@
 package com.BasicTest
 
+import org.apache.spark.SparkContext
+
 object BasicAvg {
   def main(args: Array[String]): Unit = {
     val master = args.length match{

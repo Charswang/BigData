@@ -1,5 +1,9 @@
 package com.BasicTest
 
+import java.io.File
+
+import org.apache.spark.SparkContext
+
 object BasicAccumulator2 {
   def main(args: Array[String]) {
     val master = "local"
