@@ -1,3 +1,5 @@
+package test.leetcode;
+
 import java.util.*;
 
 public class leetcodeTest {
