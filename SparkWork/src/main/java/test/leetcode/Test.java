@@ -360,6 +360,47 @@ public class Test {
         }
         return list2;
     }
+
+    /**
+     * 16. 最接近的三数之和
+     * 这里使用的方法，与第15题的方法一样。
+     * @param nums
+     * @param target
+     * @return
+     */
+    public int threeSumClosest(int[] nums, int target) {
+        Arrays.sort(nums);
+        int len = nums.length;
+        int min_dif = 0x7fffffff;
+        int result = 0;
+        // for循环选定一个三个数字中的其中一个
+        for(int i = 0;i < len;i++){
+            // 去除重复的三个数字中的第一个数字
+            if(i > 0 && nums[i] == nums[i-1]){
+                continue;
+            }
+            int s = i + 1;
+            int e = len - 1;
+            // 开始对后面的数进行双指针循环
+            while(s < e){
+                // 如果两者差值小于当前差值min_dif，则更新最小差值，更新result
+                if(min_dif > Math.abs(target - nums[i] - nums[s] - nums[e])){
+                    min_dif = Math.abs(target - nums[i] - nums[s] - nums[e]);
+                    result = nums[i] + nums[s] + nums[e];
+                }
+                // 如果三数之和大于目标值，可以将后面的指针向前移动一个位置，将三数之和进行减少操作
+                if(nums[i] + nums[s] + nums[e] > target){
+                    e--;
+                }else if(nums[i] + nums[s] + nums[e] < target){  // 如果三数之和小于目标值，可以将后面的指针向后移动一个位置，将三数之和进行增加操作
+                    s++;
+                }else{
+                    return target;  // 如果三数之和等于目标值，直接返回目标值
+                }
+
+            }
+        }
+        return result;
+    }
 }
 
 
