@@ -15,8 +15,10 @@ public class Test {
 //        System.out.println(balancedStringSplit("RLRRLLRLRL"));  // 1221. 分割平衡字符串
 //        System.out.println(freqAlphabets("10#11#12"));  // 1309. 解码字母到整数映射
 //        System.out.println(sortString("ggggggg")); // 1370. 上升下降字符串
-        int[] height = {1,1};
-        System.out.println(maxArea(height));
+//        int[] height = {1,1};
+//        System.out.println(maxArea(height));
+        int[] nums = {1,-1,-1,0};
+        System.out.println(threeSum(nums));
     }
 
     /**
@@ -279,6 +281,11 @@ public class Test {
         return result.toString();
     }
 
+    /**
+     * 11、盛最大水的容器
+     * @param height
+     * @return
+     */
     static int maxArea(int[] height) {
         // 暴力
         /*int len = height.length;
@@ -310,7 +317,48 @@ public class Test {
             }
         }
         return max;
+    }
 
+    /**
+     * 15、三数之和
+     * 给你一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？请你找出所有和为 0 且不重复的三元组。
+     * 注意：答案中不可以包含重复的三元组。
+     * @param nums
+     * @return List<List<Integer>>
+     */
+    static List<List<Integer>> threeSum(int[] nums) {
+        List<List<Integer>> list2 = new ArrayList<List<Integer>>();
+        Arrays.sort(nums);
+        for(int i = 0;i < nums.length;i++){
+            if(i>0 && nums[i] == nums[i-1]){
+                continue;
+            }
+            int t = nums[i];
+            int m = i + 1;
+            int n = nums.length - 1;
+            while(m < n){
+                if(nums[m] + nums[n] + t > 0){
+                    n--;
+                }else if(nums[m] + nums[n] + t < 0){
+                    m++;
+                }else{
+                    List<Integer> list1 = new ArrayList<Integer>();
+                    list1.add(nums[i]);
+                    list1.add(nums[m]);
+                    list1.add(nums[n]);
+                    list2.add(list1);
+                    while(m < n && nums[m]==nums[m+1]){
+                        m++;
+                    }
+                    while(n > m && nums[n]==nums[n-1]){
+                        n--;
+                    }
+                    m++;
+                    n--;
+                }
+            }
+        }
+        return list2;
     }
 }
 
