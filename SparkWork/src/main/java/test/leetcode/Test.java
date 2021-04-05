@@ -17,8 +17,11 @@ public class Test {
 //        System.out.println(sortString("ggggggg")); // 1370. 上升下降字符串
 //        int[] height = {1,1};
 //        System.out.println(maxArea(height));
-        int[] nums = {1,-1,-1,0};
-        System.out.println(threeSum(nums));
+//        int[] nums = {1,-1,-1,0};
+//        System.out.println(threeSum(nums));
+
+        int[] nums = {0,0,0,0};
+        System.out.println(fourSum(nums, 0));
     }
 
     /**
@@ -400,6 +403,58 @@ public class Test {
             }
         }
         return result;
+    }
+
+    /**
+     * 18. 四数之和
+     * @param nums
+     * @param target
+     * @return
+     */
+    static List<List<Integer>> fourSum(int[] nums, int target) {
+        /*
+        执行用时：14 ms, 在所有 Java 提交中击败了62.53%的用户
+        内存消耗：38.9 MB, 在所有 Java 提交中击败了54.84%的用户
+         */
+        List<List<Integer>> list2 = new ArrayList<List<Integer>>();
+        Arrays.sort(nums);
+        // 首先选出不重复的单个元素，然后更改target的值，然后按照三数之和等于更改后的target的方法，对后面的元素进行求三数之和。
+        for(int i = 0;i < nums.length-3;i++){
+            if(i > 0 && nums[i]==nums[i-1]){
+                continue;
+            }
+            int temp = target + nums[i] * (-1);
+            for(int j = i+1;j < nums.length;j++){
+                if(j>i+1 && nums[j]==nums[j-1]){ // 注意这里的j>i+1，当nums是{0,0,0,0}的话没有j>i+1的话，会错。这里的nums[j]==nums[j-1]中，j可以和i所处位置元素可以相同，但是不可以与后面元素的相同。
+                    continue;
+                }
+                int m = j + 1;
+                int n = nums.length - 1;
+                while(m < n){
+                    if(nums[j] + nums[m] + nums[n] > temp){
+                        n--;
+                    }else if(nums[j] + nums[m] + nums[n] < temp){
+                        m++;
+                    }else{
+                        List<Integer> list1 = new ArrayList<Integer>();
+                        list1.add(nums[i]);
+                        list1.add(nums[j]);
+                        list1.add(nums[m]);
+                        list1.add(nums[n]);
+                        list2.add(list1);
+                        while(m < n && nums[m]==nums[m+1]){
+                            m++;
+                        }
+                        while(n > m && nums[n]==nums[n-1]){
+                            n--;
+                        }
+                        m++;
+                        n--;
+                    }
+                }
+            }
+        }
+        return list2;
     }
 }
 
