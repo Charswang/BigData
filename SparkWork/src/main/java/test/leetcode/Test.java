@@ -20,8 +20,23 @@ public class Test {
 //        int[] nums = {1,-1,-1,0};
 //        System.out.println(threeSum(nums));
 
-        int[] nums = {0,0,0,0};
-        System.out.println(fourSum(nums, 0));
+//        int[] nums = {0,0,0,0};
+//        System.out.println(fourSum(nums, 0));
+
+        ListNode listNode = new ListNode(1);
+        ListNode l2 = new ListNode(2);
+        listNode.next = l2;
+        /*ListNode l3 = new ListNode(3);
+        l2.next = l3;
+        ListNode l4 = new ListNode(4);
+        l3.next = l4;
+        ListNode l5 = new ListNode(5);
+        l4.next = l5;*/
+        ListNode result = removeNthFromEnd(listNode,1);
+        while(result!=null){
+            System.out.println(result.val);
+            result = result.next;
+        }
     }
 
     /**
@@ -456,6 +471,39 @@ public class Test {
         }
         return list2;
     }
+
+    static class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int val){
+            this.val = val;
+        }
+        ListNode(int val,ListNode next){
+            this.val = val;
+            this.next = next;
+        }
+    }
+    static ListNode removeNthFromEnd(ListNode head, int n) {
+        // pre指向要删除节点的前一个结点;p要和pre相隔n个位置，然后让p走到最后一个结点处，这时pre的下一个节点指向要删除的节点。
+        ListNode pre = head,p = head;
+        // 先将p往后移动n个位置
+        for(int i = 1;i <= n;i++){
+            p = p.next;
+        }
+        // p如果等于空，说明要删除的时头节点。
+        if(p==null){
+            return head.next;
+        }
+        // pre和p同时往后移动，直到p达到最后一个节点
+        while(p.next!=null){
+            pre = pre.next;
+            p = p.next;
+        }
+        // 删除倒数第n个节点
+        pre.next = pre.next.next;
+        return head;
+    }
 }
+
 
 
