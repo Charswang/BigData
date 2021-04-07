@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1e356c-6d43-4a39-bbb1-e03bb495edbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SortWork/LeetcodeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SortWork/ShellSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SortWork/ShellSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/customOutputFormat/CustomRecordWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customOutputFormat/CustomRecordWriter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormatTest$FilterOutputFormatMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormatTest$FilterOutputFormatMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormatTest$FilterOutputFormatReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormatTest$FilterOutputFormatReducer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormatTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customOutputFormat/FilterOutputFormatTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$CachedUid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$CachedUid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$CacheManipulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$CacheManipulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$CachedName.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$CachedName.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$IdCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$IdCache.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$NoMlockCacheManipulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$NoMlockCacheManipulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$Stat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX$Stat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$POSIX.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$Windows$AccessRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$Windows$AccessRight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$Windows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO$Windows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/hadoop/io/nativeio/NativeIO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wordcount/WordCount$WordCountMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wordcount/WordCount$WordCountMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wordcount/WordCount$WordCountReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wordcount/WordCount$WordCountReducer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wordcount/WordCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wordcount/WordCount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SparkWork/src/main/java/leetcodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SparkWork/src/main/resources/inputfiles/hadoopfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../SparkWork/src/main/resources/inputfiles/hadoopfile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SparkWork/src/main/scala/LoadKeyValueTextInput.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../SparkWork/src/main/scala/LoadKeyValueTextInput.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -218,6 +200,7 @@
       <workItem from="1607056426788" duration="3441000" />
       <workItem from="1607064152379" duration="3090000" />
       <workItem from="1607154821338" duration="169000" />
+      <workItem from="1608701636693" duration="253000" />
     </task>
     <servers />
   </component>
