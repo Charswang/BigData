@@ -23,16 +23,36 @@ public class Test {
 //        int[] nums = {0,0,0,0};
 //        System.out.println(fourSum(nums, 0));
 
-        ListNode listNode = new ListNode(1);
+        /*ListNode listNode = new ListNode(1);
         ListNode l2 = new ListNode(2);
         listNode.next = l2;
-        /*ListNode l3 = new ListNode(3);
+        *//*ListNode l3 = new ListNode(3);
         l2.next = l3;
         ListNode l4 = new ListNode(4);
         l3.next = l4;
         ListNode l5 = new ListNode(5);
-        l4.next = l5;*/
+        l4.next = l5;*//*
         ListNode result = removeNthFromEnd(listNode,1);
+        while(result!=null){
+            System.out.println(result.val);
+            result = result.next;
+        }*/
+
+        /*int[] nums = {0,0,1,1,1,1,2,3,3};
+        System.out.println(removeDuplicates(nums));*/
+
+        ListNode listNode = new ListNode(1);
+        ListNode l2 = new ListNode(4);
+        listNode.next = l2;
+        ListNode l3 = new ListNode(3);
+        l2.next = l3;
+        ListNode l4 = new ListNode(2);
+        l3.next = l4;
+        ListNode l5 = new ListNode(5);
+        l4.next = l5;
+        ListNode l6 = new ListNode(2);
+        l5.next = l6;
+        ListNode result = partition(listNode,3);
         while(result!=null){
             System.out.println(result.val);
             result = result.next;
@@ -505,6 +525,63 @@ public class Test {
         // 删除倒数第n个节点
         pre.next = pre.next.next;
         return head;
+    }
+
+    /**
+     * 80. 删除有序数组中的重复项 II  -- 双指针
+     * @param nums
+     * @return
+     */
+    static int removeDuplicates(int[] nums) {
+        int pre=0,p=0;
+        int count = 0;
+        while(p<nums.length-count){
+            if(nums[pre]==nums[p]){
+                if(p-pre>=2){
+                    remove(nums,p);
+                    count++;
+//                    p++;
+                }else{
+                    p++;
+                }
+            }else{
+                pre=p;
+                p++;
+            }
+        }
+        return nums.length-count;
+    }
+    static void remove(int[] nums,int target){
+        for(int i = target;i<nums.length-1;i++){
+            nums[i] = nums[i+1];
+        }
+//        nums[nums.length-1] = 0;
+    }
+
+    /**
+     * 86. 分隔链表
+     * @param head
+     * @param x
+     * @return
+     */
+    static ListNode partition(ListNode head, int x) {
+        ListNode min = new ListNode(0);
+        ListNode max = new ListNode(0);
+        ListNode pre = min;
+        ListNode p= max;
+        while(head!=null){
+            if(head.val<x){
+                min.next = head;
+                min = min.next;
+            }else {
+                max.next = head;
+                max = max.next;
+            }
+            head = head.next;
+        }
+        max.next=null;
+        min.next = p.next;
+        return pre.next;
     }
 }
 
