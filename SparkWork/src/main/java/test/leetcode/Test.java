@@ -583,6 +583,25 @@ public class Test {
         min.next = p.next;
         return pre.next;
     }
+
+    /**
+     * 142. 环形链表 II
+     * 检查有无循环链表--快慢指针
+     * @param head
+     * @return
+     */
+    static ListNode detectCycle(ListNode head) {
+        List<ListNode> list = new ArrayList<ListNode>();
+        while(head!=null){
+            if(list.contains(head)){
+                return head;
+            }else{
+                list.add(head);
+                head = head.next;
+            }
+        }
+        return null;
+    }
 }
 
 
