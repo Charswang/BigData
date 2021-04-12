@@ -41,7 +41,7 @@ public class Test {
         /*int[] nums = {0,0,1,1,1,1,2,3,3};
         System.out.println(removeDuplicates(nums));*/
 
-        ListNode listNode = new ListNode(1);
+        /*ListNode listNode = new ListNode(1);
         ListNode l2 = new ListNode(4);
         listNode.next = l2;
         ListNode l3 = new ListNode(3);
@@ -56,7 +56,11 @@ public class Test {
         while(result!=null){
             System.out.println(result.val);
             result = result.next;
-        }
+        }*/
+
+        int target = 7;
+        int[] nums = {5};
+        System.out.println(minSubArrayLen(target,nums));
     }
 
     /**
@@ -601,6 +605,83 @@ public class Test {
             }
         }
         return null;
+    }
+
+    /**
+     * 209. 长度最小的子数组
+     * 自己写的太烂了，纯暴力。
+     * @param target
+     * @param nums
+     * @return
+     */
+    /*static int minSubArrayLen(int target, int[] nums) {
+        int min_count = nums.length+1;
+        if(nums[nums.length-1]>=target){
+            return 1;
+        }
+        for(int i = 0;i < nums.length;i++){
+            int sum = nums[i];
+            int count = 1;
+            *//*if(i==nums.length-1){
+                if (nums[i]>=target){
+                    return 1;
+                }
+                break;
+            }*//*
+            for(int j = i+1;j < nums.length;j++){
+                if(sum>=target){
+                    break;
+                }
+                sum += nums[j];
+                count++;
+            }
+            if(count==nums.length && sum < target){
+                return 0;
+            }
+            if(sum >= target && count < min_count){
+                min_count = count;
+            }
+        }
+        if (min_count > nums.length){
+            return 0;
+        }
+        return min_count;
+    }*/
+    static int minSubArrayLen(int target, int[] nums) {
+        int n = nums.length;
+        if(n==0){
+            return 0;
+        }
+        int ans = Integer.MAX_VALUE;
+        for(int i = 0;i < n;i++){
+            int sum = 0;
+            for(int j = i;j < n;j++){
+                sum = sum + nums[j];
+                if(sum >= target){
+                    ans = Math.min(ans,j-i+1);
+                    break;
+                }
+            }
+        }
+        return ans==Integer.MAX_VALUE?0:ans;
+    }
+
+    /**
+     * 287. 寻找重复数
+     * 要寻求更好的方法，官方题解：1、二分查找；2、二进制；3、快慢指针
+     * @param nums
+     * @return
+     */
+    static int findDuplicate(int[] nums) {
+        // 1、一个一个存入list/map中，然后在添加的时候检查list/map中是否已存在元素
+        // 2、先排序，然后遍历数组，看第n个和第n+1个数是否相等   3ms 53.02%   38.3MB  79.74%
+        Arrays.sort(nums);
+        for(int i = 0;i < nums.length-1;i++){
+            if(nums[i]==nums[i+1]){
+                return nums[i];
+            }
+        }
+        return -1;
     }
 }
 
