@@ -1,5 +1,6 @@
 package test.leetcode;
 
+import javax.jnlp.IntegrationService;
 import java.util.*;
 
 public class Test {
@@ -58,9 +59,29 @@ public class Test {
             result = result.next;
         }*/
 
-        int target = 7;
+        /*int target = 7;
         int[] nums = {5};
-        System.out.println(minSubArrayLen(target,nums));
+        System.out.println(minSubArrayLen(target,nums));*/
+
+        // TreeMap与HashMap
+        /*Map<String,Integer> treemap = new TreeMap<String,Integer>();
+        treemap.put("a",null); // TreeMap中不能存放null
+        for (Map.Entry<String,Integer> entry : treemap.entrySet()){
+            System.out.println(entry.getKey() + "--" + entry.getValue());
+        }
+        Map<String,Integer> hashMap = new HashMap<String,Integer>();
+        hashMap.put("kaa",1);
+        hashMap.put("kc",3);
+        hashMap.put("kkb",2);
+        hashMap.put("kf",2);
+        hashMap.put("e",2);
+        hashMap.put(null,null);
+        for (Map.Entry<String, Integer> entry : hashMap.entrySet()){
+            System.out.println(entry.getKey() + "--" + entry.getValue());
+        }*/
+
+        System.out.println(characterReplacement("ABBB", 2));
+
     }
 
     /**
@@ -683,6 +704,40 @@ public class Test {
         }
         return -1;
     }
+
+    /**
+     * 424. 替换后的最长重复字符
+     *
+     *代码暴力垃圾，运行速度太慢
+     * @param s
+     * @param k
+     * @return
+     */
+    static int characterReplacement(String s, int k) {
+        int max = k+1;
+        int count = 0;
+        for(int i = 0;i < s.length()-k;i++){
+            int temp = k;
+            for(int j = i;j < s.length();j++){
+                if(s.charAt(i)!=s.charAt(j)){
+                    if(temp<=0){
+                        break;
+                    }
+                    temp--;
+                }
+                count++;
+            }
+            // 注意这里对max的赋值问题
+            if(count+temp < s.length()){
+                max = Math.max(max,count+temp);
+            }else{
+                max = s.length();
+            }
+            count = 0;
+        }
+        return max;
+    }
+
 }
 
 
