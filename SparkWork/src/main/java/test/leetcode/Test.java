@@ -75,12 +75,15 @@ public class Test {
         hashMap.put("kkb",2);
         hashMap.put("kf",2);
         hashMap.put("e",2);
+        hashMap.put("e",3);
         hashMap.put(null,null);
         for (Map.Entry<String, Integer> entry : hashMap.entrySet()){
             System.out.println(entry.getKey() + "--" + entry.getValue());
-        }*/
+        }
+        System.out.println(hashMap.get("www"));
+        System.out.println(treemap.get("www"));*/
 
-        System.out.println(characterReplacement("ABBB", 2));
+//        System.out.println(characterReplacement("ABBB", 2));
 
     }
 
