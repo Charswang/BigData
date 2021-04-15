@@ -1,6 +1,9 @@
 package test.leetcode;
 
 import javax.jnlp.IntegrationService;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 import java.util.*;
 
 public class Test {
@@ -84,6 +87,18 @@ public class Test {
         System.out.println(treemap.get("www"));*/
 
 //        System.out.println(characterReplacement("ABBB", 2));
+
+        /*int[] nums = {-2,1,-1,-2,-2};
+        System.out.println(circularArrayLoop(nums));*/
+
+        int[][] nums = {{1,2},{3,4}};
+        try{
+            PrintWriter pw = new PrintWriter(new OutputStreamWriter(new FileOutputStream("./javayesy.text"),"UTF-8"));
+            pw.write(nums[1][1]);
+
+        }catch(Exception e){
+            e.printStackTrace();
+        }
 
     }
 
@@ -739,6 +754,80 @@ public class Test {
             count = 0;
         }
         return max;
+    }
+
+    // 双指针 -- 滑动窗口
+    static int characterReplacement2(String s,int k){
+        int[] num = new int[26]; //滑动窗口中每个字符出现的次数
+        int left=0;
+        int right=0;
+        int maxn = 0;
+        int n = s.length();
+        while(right<n){
+            num[s.charAt(right)-'A']++;
+            maxn = Math.max(maxn,num[s.charAt(right)-'A']);
+            if(right-left+1-maxn>k){ // 如果滑动窗口长度-滑动窗口中字符出现的最大次数>k的话，说明滑动窗口并不符合条件
+                num[s.charAt(left) - 'A']--; // 因为滑动窗口左边往前挪一位，所以滑动窗口中相应字符出现的次数要减一
+                left++; // 滑动窗口左边往前挪一位
+            }
+            right++;
+        }
+        return right-left; // 因为最后right=n所以不用right-left+1；返回滑动窗口的长度的原因是因为，要让right走到底，然后如果当前right加入滑动窗口符合条件那么滑动窗口长度+1，否则left++，right++来使滑动窗口长度不变进行滑动。
+    }
+
+    /**
+     * 457. 环形数组是否存在循环
+     * 双指针判断是否存在循环，不存在的话所经过的元素位置置为0来减少时间复杂度
+     * @param nums
+     * @param k
+     */
+    static void setZero(int[] nums,int k){
+        int j = k;
+        while(true){
+            j = (k + nums[k]+1000*nums.length) % nums.length;
+            if(nums[j]==0 || nums[k]*nums[j] < 0){
+                nums[k]=0;
+                break;
+            }
+            nums[k]=0;
+            k = j;
+        }
+    }
+    static boolean circularArrayLoop(int[] nums) {
+        for(int i = 0;i < nums.length;i++){
+            int m=i,n=i;
+            int lastm,lastn;
+            // 利用快慢指针
+            while(true){
+                // 慢指针，做一次
+                lastm = m;
+                // 加上1000*nums.length的原因是因为如果m为0时，nums[m]为-100，那么不能直接取余，要是要最少加个nums.length才可以。
+                // 因为数组中的元素是-1000-1000，所以只加个num.length是不可以的。所以最少还要加上1000*nums.length才可以
+                // 为什么1000还要乘于nums.length?因为nums.length最大可以是5000，5000是大于1000的，所以只加1000是不可以的，因为如果m=0，nums[m]=-1000,而nums.length=5000的话，只加1000就不可以的。
+                m=(m+nums[m]+1000*nums.length)%nums.length;
+                if(nums[m]==0 || m==lastm || nums[m]*nums[lastm]<0){
+                    setZero(nums,i);
+                    break;
+                }
+                // 快指针，做两次
+                lastn =  n;
+                n=(n+nums[n]+1000*nums.length)%nums.length;
+                if(nums[n]==0 || n==lastn || nums[n]*nums[lastn]<0){
+                    setZero(nums,i);
+                    break;
+                }
+                lastn = n;
+                n=(n+nums[n]+1000*nums.length)%nums.length;
+                if(nums[n]==0 || n==lastn || nums[n]*nums[lastn]<0){
+                    setZero(nums,i);
+                    break;
+                }
+                if(m==n){
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
 }
