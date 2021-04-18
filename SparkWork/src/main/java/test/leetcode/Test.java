@@ -91,14 +91,25 @@ public class Test {
         /*int[] nums = {-2,1,-1,-2,-2};
         System.out.println(circularArrayLoop(nums));*/
 
-        int[][] nums = {{1,2},{3,4}};
+        /*int[][] nums = {{1,2},{3,4}};
         try{
             PrintWriter pw = new PrintWriter(new OutputStreamWriter(new FileOutputStream("./javayesy.text"),"UTF-8"));
             pw.write(nums[1][1]);
 
         }catch(Exception e){
             e.printStackTrace();
-        }
+        }*/
+
+        String s = "abcea";
+        List<String> list = new ArrayList<String>();
+        /*list.add("ale");
+        list.add("apple");
+        list.add("monkey");
+        list.add("plea");*/
+        list.add("abe");
+        list.add("aba");
+//        list.add("c");
+        System.out.println(findLongestWord(s, list));
 
     }
 
@@ -830,6 +841,42 @@ public class Test {
         return false;
     }
 
+    /**
+     * 524. 通过删除字母匹配到字典里最长单词
+     * 注意使用compareTo()方法的时候，不能只认为这个方法只会返回1，-1，0。对于字符串来说，返回的值是两个串首次出现不同字符的ASCII的差值,所以这里要分为>0,<0,以及==0三种情况
+     * 以后还是直接使用>0,<0,=0三种情况吧，这样比较保险点 ^ ^.
+     * @param s
+     * @param dictionary
+     * @return
+     */
+    static String findLongestWord(String s, List<String> dictionary) {
+//        int index = 0;
+        // 判断列表中的元素是否符合要求
+        String result = "";
+        for(String dic:dictionary){
+            int i = 0;
+            int j = 0;
+            while(i<s.length() && j<dic.length()){
+                if(s.charAt(i)==dic.charAt(j)){
+                    i++;
+                    j++;
+                }else{
+                    i++;
+                }
+            }
+            if(j>=dic.length()){
+                // 筛选符合条件的字符串
+                if(dic.length()>result.length()){
+                    result = dic;
+//                    index = dictionary.indexOf(dic);
+                }else if(dic.length()==result.length()){
+                    System.out.println(dic.compareTo(result));
+                    result = dic.compareTo(result)<0?dic:result; // 比较字典顺序，注意这里的<0而不是==-1
+                }
+            }
+        }
+        return result;
+    }
 }
 
 
