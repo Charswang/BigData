@@ -100,16 +100,30 @@ public class Test {
             e.printStackTrace();
         }*/
 
-        String s = "abcea";
+        /*String s = "abcea";
         List<String> list = new ArrayList<String>();
-        /*list.add("ale");
+        *//*list.add("ale");
         list.add("apple");
         list.add("monkey");
-        list.add("plea");*/
+        list.add("plea");*//*
         list.add("abe");
         list.add("aba");
 //        list.add("c");
-        System.out.println(findLongestWord(s, list));
+        System.out.println(findLongestWord(s, list));*/
+
+        /*int[] nums = {3, 1, 4, 1, 5};
+        int k = 2;
+        System.out.println(findPairs(nums, k));*/
+
+        /*String s1 = "abhna";
+        String s2 = "adhalhnbahahhh";*/
+        /*String s1 = "kuzntqeuvaszrspkgjvxrupwxwrexztptsowceibeewxbslvosbobmyymikdscshybtmanuxeqtanrjekbwirmhgvfmzipfiqxcilarfyasoayepgfzmdytlpjymeaztsyubkbmblepwozffxiitdhwaquozlfmnascomqczrbhxcnzugppddtudxrigfeaozzojpeamnobapgwksudbiwdedvprwonmzardsodhxmkgghqzfhorjaijdvwzsnfpdfklwibbsnwqsoajcpjisbgizgttlnmclawbgnhbmtcpuusuammvgxnopdngclxumgfgwjrinamevhirpmlkwtyxkrmoffrreotdosjghsrkgxyiyrytbbofgczndgmdalyvvoljczcztxitxelywqemjigtuanubpstndwzvtiejtoqvetaehvcuujyupncumjnkesmoadzyvkwvjqgqewvvvpheyyvkewefbjjqzajxnhouodanyruqpzdcjmgnxkmhsgqjhpcyviewmrkfioudzqivmmguxjxuxdmpsmkwnvbxcomifgxqmcovlkooptjpfxjllwtlkkoaayzduodgsusaogswmoqkznynwiukkrrxzkwcknwlazxnlmghybxmyvquzbdqlpfydhnnuvlmyjmixyzso";
+        String s2 = "zthosfejqodcstlqczkndmgwtcakxzxaklkrehkfwnokclametzpnblcwaspdblfoopsiqrpzlbmlysddlqxcjzezcpknwzljvhmqxqinmptcppipifchxexlytleambzwmqwgvxlehnecdqsqbrxqfwvcovgdvtmwbnvajvkizixbmuiuyuixjhiohimghdbohetogrhzsbzgpekosxcjglsrvzenovpjyzknuumpsdrufcjsyfbuwfmaaztxjbpjctnuwcqknnemptjbgfthyafeatskfmysaioqikcpywmefujnvthumyhareltknxyvqprexgbwyzodfkinltwobeukrmpyjkrgvwhbtnzaozgxouxndmkyvzlujhxxwebptykctbojgnvcwhhgsyohccrqxksdyygcwdsazlznhqjdddisjmfqvjqcquuvjrzkcvzpxpfakbkrqlzacanqbggavezedqmoffxmkrlcwxdeosvhvvknqimwpasrlldewvhppzixgcxisysgeppcwfknecupyrrqnkhvessintrequaqiuoesgyndovaqxnlldmdupjcjzejannfjfasguyvgsdakwxezrginhdstbrtqmznpkasytqtbfyftwhgnuazcwehsvcdukuifmkefzabxyhihgnldpsvglubalbsvqstfxehvnpxmrejnkqacafuvzghbttgqmjhqzejasoasbpjirfawcvwahykvrfpaadcgvxssebdznzyvamyilahahgdslwvpuvzsinbbqecdqyvwnucjzyxmxwqwyxbxoljnjcqqdumghmcvqpcpjlxemupospxvkicqvyiavatbojgzurfzitgpeqjmvsgzzqphciyweyavebslgegjcyqmgehchryyclswjequeijzpsvuercqzhwgtgyxhxavhqkrwqdvkqvklicxpasnsnbgybtufdgbwrpaewzwczabckvddtewunsktcznqkivsubdjrpzxtsohiilcybrwqtlfqmjzmvpbfjmbjvbpwietkyzwzizwuiohjuhoekejhmkrooeyydmavdencmxhsxdnyitzivlymzyqogdhzrwhbdupborzqihurziajjwbrfwkzgbpmfgtobkbzyijcgkszyuyouyxvztmmtaqetcaxqrkbrmkzyokglckifgdfidjqoiqrfrpftagxxoqodbyygdioxdznycssxjvpotsrptttrbjayhugecptuibezsyggqcyvzosvmlpwmnuhovvhfyazkdrfxlxjxpbkkbuexxnklhnkteyjshhlojnbxtyltdfzhulcsptinpsskaeowofruejqpinhivlpvvosppxtbbrebvfihmamdlvsjirwfzhzmaqzuryakjlzroxrlwccdannvzwenabvosplnwhotxyzxhocdnvsekmnepzzqjhqrokocqewpihhyftshsfehijlvpajrcrgeqqjigmzkrhcgafqkdkrkkyausijdfzqewawxurtzhioqqnoxhbrdrriveapdebbwbrnmpcakomfhpfrqvzmpqkqucoepjklaqtirgkcrgpdhvyxybnulrchqgbupjdxxalbwljfpdjfnlqfquhdxvvuaecgzgfhulhkkvpuexpssodxqxhrbpzzgdiohxzjxnuhtavlittooxkuededfxdaabuzdlwjhitwykqdvtrwuohpvpgpeudhpslpvxmotibojtgvohqaaowiofdtgbkiiurhcfavlgsnqxndcxyxozklduxqeovzrtwuhoikgpyqoqwllagzufkuzntqeuvaszrspkgjvxrupwxwrexztptsowceibeewxbslvosbobmyymikdscshybtmanuxeqtanrjekbwirmhgvfmzipfiqxcilarfyfsoayepgfzmdytlpjymeaztsyubkbmblepwozffxiitdhwaquozlfmnascomqczrbhxcnzugppddtudxrigfeaozzojpeamnobapgwksudbmwdedvprwonmzardsodhxmkgghqzfhorjaijdvwzsnfpdfklwibbsnwqsoajcpjisbgizgttlnmclawbgnhbmtcpuusuamivgxnopdngclxumgfgwjrinamevhirpmlkwtyxkrmoafrreotdosjghsrkgxyiyrytbbofgczndgmdalyvvoljczcztxitxelywqemjigtuanubpstndwzvtiejtoqvetaehvcuujyupncumjnkesmoadzyvkwvjqgqewvvvpheyyvkewefbjjqzajxnhouodanyruqpzdcjmgnxkmhsgqjhpcyviewmrkfioudzqivmmguxjxuxdmpsmkwnvbxcomifgxqmcovlkooptjpfxjllwtlkkoaayzduodgsusaogswmoqkznynyiukkrrxzkwcknwlazxnlmghybxmyvquzbdqlpfydhnnuvlmyjmixwzsoufvjlrqtzxvybzhurdqdtnkciiradptqxzgrkqgfbnsmptyyggwpenatlrtpvmdpveivmenzwjlwdhlhmmpvbglhxcinvhhcphgklicwwnwqbkbndiuqowwgzdczwvlazndbboublzrltxahxenivmkbwofrnkkvjixfbbctshvqzmgwqrmheupodlrnebsidrbxxjfeoqgcoscymzskvbamtxtpumbdmedjghxazwamkqdrxsqytqxkrrqcnwrtkuaocuwmyucctdnaqfjlosovveoxjyypqrbkflxrrxlnjxhkrrvjettqfzzbwbzowsufxmppazhwiwcvimmlixdzgpmfayrblbkulfopwarxlsbfkuqvhyufwdswfpxqwhuvepyslbliapotofrxhufoopqhqjcjdtleeoedsacpeqfewxehghwvfvqmlzvzudkqxinsfekpbaggbpohbtbhcvdzvuormpzadkhhqqyspfkijjcelofwgkgimjxrkwqwhpqfihyhmwdkwhathcxvxtuopufsjaagbamghtsjewrpooxrprtvqpslsbaijrzojgwhekijtfugwbvgdltgpentcyjbwqjcdqkhicbsdvgtvsecpsacesztkjdskoumcheqzmoijoimnmnhfavttfamkkvugpmnibdzhcieyhhctifhbvqrllslpvymjamfmgladmpeqdrtumbqwcwwkduavjokhjrdbdozxaqemvurjwdukuwrbzfstuesjqfgblvvaqemylqgrtfzdrfgtcbvaokygyidfsbppasppzcunjwbrhqscumnrugeyxqvceninwsvmqcekvuetloevkrntgsrivpebgoobcggmgwkrzagkdavpejdgkpokcdpvncsmduzhowhdjklqwyphevtaugcabxovxgjovvgzksukpnadsblbpnuuihxdkovwsmniptwhrjxhyitozdwgkdkasspklxbyfmmugmawjflmrdiqmolsufpyzkrrqrvgnbtcogomdjrymxgnocnmpsdmbncterfrrxqyrsdqjzrodttnjbblleexyvfzxemlxfmxbzffflpyifrqhbdnwpuuwfhskfevjshsxvhvbldqyxenpxkvamashnbmrfiladqnuzwltrkoegwxrjveajpyvchyotakniwcyigejnaspdfjssacnfhbyobgrovavxoclvkgvgivoiycquftjuqynabeqakugedwlogqfbbivbzisljreuowaxfaugjunbyrcxvlqjvvuewgprwfiofxyzdaomzjfystxrbpmgdwyznnuzibozcjtsxxastlhmjpogvuhdtfhnmrhdxihhrtxqocmsmysxuudsdquadshqncpbejkjarbhkwkstpcqgwuarnmvtfjvdzeeklwnnjdewmwdyzdfnryaqoiysysfvlxetggjhywxwvkvvuccklxptokzvrrhodicekjrffbdjxoftxbstcbxjcksqcvcwkisywdzepzgznaorlllmahrqepouqnrtbhgxnsnyhkacxhjzgvxhlukbvspfzqgguqkngncotvgvuygijtkucvqcsjjolodnbfeznuikkaghyyqtxmtdjchrgybirzkbysbgnwwqaxjsnneazxnmdyzooizcyqtxlmqvujoqhjqlnuvojlkcdybfryidsunirmymtvltnjiggwxeqowcnbukotbngjaidyvhmobdxlklwqxshkaphxwdxzonqddvstwrrtatklpujldtgrofxyunlmlwquruzekmdymzhpuuuaiyinmaedxxhhayzybsepcohcrymkysdaeagmhodvkoissnegjecmtnbydbakamurdqwwgqqfbefltdkdvyldjxynweicudbwirebvzknodfkycidoqaalxorwlvnosvcpudvsiljwlmfqpvwtbjeyydexvfmkiilwlxcpnogyeyspjaumcbrgxkeeezgyrbmtkotoyjnedraupxevwjcluyxdctfazusyqeklxpotczvkphllcgfrykpuwscfknqhfkxdihdkymiqizppipnbflfhduzjgvoehhvtqolybcshofasguaaeaakcsxqsqxpuydzhndleoxgmkrtlivudapfhefocneliicmrtishcmxmcdskyedbqppswqnesziwankobhaxklswulygdojhpobyezjzyengtfulymybqiodmkirqpggycyouzqhrexnntvnlhhokdyzvudgilvqpjkeactaivsjdwfesruusewlpscumpqslulwrhramanthuogjdadmqjeccbutdfexdcsbqujpqdlryelnzvfbncrajicdnomidvmspjljjzglnahdmrctedjzdtozllmmyeamctrcyrzzdzwvfqgjfstbtitgmeogjpgllpihylxgupxxqmheusrglbampwrhtejoqqjkcljmppmemguapopatjkbzomwegkrwxblxgymfmurhfokjkhljtxosxtgmaldrjjhxrcvuddvzlamavxpzszsrfepfsukadtnwyzhwdergrofmetngzuifiuonziduvucichmxhmxrulpykwedymiycbhcsvrkctvqqfvygtlyhlqbrwvmbgnwlryeotjkvowxmdlyjhyvtvyognldmsxqlotfzvxrmdultwbsnstmjakjaqqpfurvwturqyzcnfkoxumuquwgpersslowdvrnssqcgwmfnssvtobdwcscoikoythwhsxswsmsimntribaohzrmjculdnnguchmqgyzqeipuumwgizlvjmpvyotgzmtsantswdarbyaklpiclafgqdaoeiitxlcpwhlqsidkb";
+        System.out.println(checkInclusion(s1, s2));*/
+
+        int[] nums = {10,5,2,6};
+        int k = 100;
+        System.out.println(numSubarrayProductLessThanK(nums, k));
 
     }
 
@@ -874,6 +888,188 @@ public class Test {
                     result = dic.compareTo(result)<0?dic:result; // 比较字典顺序，注意这里的<0而不是==-1
                 }
             }
+        }
+        return result;
+    }
+
+    /**
+     * 532. 数组中的 k-diff 数对
+     * @param nums
+     * @param k
+     * @return
+     */
+    static int findPairs(int[] nums, int k) {
+        Arrays.sort(nums); // 数组排序以方便双指针移动
+        int i = 0,j = 1; // 因为只有数组长度>=2的时候才可能会有解，所以这里直接将后指针指向数组中索引为1的位置
+        int result = 0; // 置结果为0
+        while(i<nums.length-1 && j<nums.length){ // 当前指针位置在数组的前n-1个位置，后指针在数组中的前n个位置的时候，才可以进行循环
+            if(nums[j]-nums[i]==k){ // 如果符合条件，结果值+1，两个指针都+1
+                result++;
+                i++;
+                j++;
+                while(i< nums.length-1 && nums[i]==nums[i-1]){ // 去除前指针后面的重复值
+                    i++;
+                }
+                while(j < nums.length && nums[j]==nums[j-1]){ // 去除后指针后面的重复值
+                    j++;
+                }
+            }else if(nums[j]-nums[i]>k){ // 如果后指针数减去前指针指向的值大于k，那么i向后移动一个位置
+                i++;
+            }else{ // 如果后指针数减去前指针指向的值小于k，那么后向前移动一个位置
+                j++;
+            }
+            if(i==j){ // 每一次循环中会移动i和j，两个索引有可能会相同，这是就要将两个指针分开；
+                j++;
+            }
+        }
+        return result;
+    }
+
+    /**
+     * 567、字符串的排列
+     * @param s1
+     * @param s2
+     * @return
+     */
+    static boolean checkInclusion(String s1, String s2) {
+        // 1、用固定滑动窗口写吧
+        // int n = s1.length(), m = s2.length();
+        // if(n > m){
+        //     return false;
+        // }
+        // int[] cnt1 = new int[26];
+        // int[] cnt2 = new int[26];
+        // for(int i = 0;i < n;i++){
+        //     cnt1[s1.charAt(i)-'a']++;
+        //     cnt2[s2.charAt(i)-'a']++;
+        // }
+        // if(Arrays.equals(cnt1,cnt2)){
+        //     return true;
+        // }
+        // for(int i = n;i < m;i++){
+        //     cnt2[s2.charAt(i)-'a']++;
+        //     cnt2[s2.charAt(i-n)-'a']--;
+        //     if(Arrays.equals(cnt1,cnt2)){
+        //         return true;
+        //     }
+        // }
+        // return false;
+
+        // 2、对固定滑动窗口进行优化
+        // int n = s1.length(),m = s2.length();
+        // if(n > m){
+        //     return false;
+        // }
+        // int[] cnt = new int[26];
+        // for(int i = 0;i < n;i++){
+        //     cnt[s1.charAt(i)-'a']--;
+        //     cnt[s2.charAt(i)-'a']++;
+        // }
+        // int diff=0;
+        // for(int c : cnt){
+        //     if(c!=0){
+        //         diff++;
+        //     }
+        // }
+        // if(diff==0){
+        //     return true;
+        // }
+        // for(int i = n;i < m;i++){
+        //     int x = s2.charAt(i-n)-'a';
+        //     int y = s2.charAt(i)-'a';
+        //     if(cnt[x]==cnt[y]){
+        //         continue;
+        //     }
+        //     // 滑动之前滑动窗口中该字符正确包含，滑动之后就要变成<0了，滑动窗口中与s1中字符不同的个数+1
+        //     if(cnt[x]==0){
+        //         diff++;
+        //     }
+        //     cnt[x]--;
+        //     // 滑动之后滑动窗口中该字符正确包含，滑动之后就要变成==0了，滑动窗口中与s1中字符不同的个数-1
+        //     if(cnt[x]==0){
+        //         diff--;
+        //     }
+
+        //     // 滑动窗口最后一个位置同理
+        //     if(cnt[y]==0){
+        //         diff++;
+        //     }
+        //     cnt[y]++;
+        //     if(cnt[y]==0){
+        //         diff--;
+        //     }
+
+        //     if(diff==0){
+        //         return true;
+        //     }
+        // }
+        // return false;
+
+        // 3、双指针，滑动窗口
+        int n = s1.length(),m=s2.length();
+        if(n > m){
+            return false;
+        }
+        int[] cnt = new int[26];
+        for(int i = 0;i < n;i++){
+            cnt[s1.charAt(i)-'a']--;
+        }
+        int left=0;
+        for(int right=0;right < m;right++){
+            int x = s2.charAt(right)-'a';
+            cnt[x]++;
+            while(cnt[x]>0){
+                cnt[s2.charAt(left)-'a']--;
+                left++;
+            }
+            if(right-left+1==n){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * 713. 乘积小于K的子数组
+     * 以right结尾的符合条件的子数组的个数
+     * @param nums
+     * @param k
+     * @return
+     */
+    static int numSubarrayProductLessThanK(int[] nums, int k) {
+        /*int result = 0;
+        int product = 0;
+        for(int i = 0;i < nums.length;i++){
+            product = nums[i];
+            if(product < k){
+                result++;
+            }else{
+                continue;
+            }
+            for(int j = i+1;j < nums.length;j++){
+                if((product * nums[j]) < k){
+                    result++;
+                    product = product * nums[j];
+                }else{
+                    break;
+                }
+            }
+        }
+        return result;*/
+        int result = 0;
+        int left = 0;
+        int product = 1;
+        if(k<=1 || nums.length<1){
+            return 0;
+        }
+        // 这里使用滑动窗口来计算包括right指定的元素的符合条件的子数组的个数
+        for (int right = 0;right < nums.length;right++){
+            product *= nums[right];
+            while (product >= k){
+                product /= nums[left++];
+            }
+            // 这样求出来的数组是以right指向的元素结尾的的符合条件的子数组的个数
+            result+=right-left+1;
         }
         return result;
     }
