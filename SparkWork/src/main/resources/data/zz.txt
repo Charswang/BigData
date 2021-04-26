@@ -1,0 +1,14 @@
+server {
+        listen       8088;
+        server_name  _;
+
+        #charset utf-8;
+
+        #access_log  logs/host.access.log  main;
+
+        #默认请求
+        location / {
+            root  /home/ftp/ftpfiles;#定义服务器的默认网站根目录位置
+            index index.html index.php index.htm;#定义首页索引文件的名称
+        }
+}
