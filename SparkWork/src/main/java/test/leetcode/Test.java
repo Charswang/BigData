@@ -132,26 +132,27 @@ public class Test {
             System.out.println(i);
         }*/
 
-        int[] difficulty = {68,35,52,47,86};
-        int[] profit = {67,17,1,81,3};
-        int[] worker = {92,10,85,84,82};
+        int[] difficulty = {68, 35, 52, 47, 86};
+        int[] profit = {67, 17, 1, 81, 3};
+        int[] worker = {92, 10, 85, 84, 82};
         System.out.println(maxProfitAssignment(difficulty, profit, worker));
     }
 
     /**
      * 917. 仅仅反转字母
+     *
      * @param S
      * @return String
      */
     static String reverseOnlyLetters(String S) {
         char[] chars = S.toCharArray();
-        int i = 0,j = chars.length-1;
-        while(i < j){
-            if (!Character.isLetter(chars[i])){
+        int i = 0, j = chars.length - 1;
+        while (i < j) {
+            if (!Character.isLetter(chars[i])) {
                 i++;
                 continue;
             }
-            if (!Character.isLetter(chars[j])){
+            if (!Character.isLetter(chars[j])) {
                 j--;
                 continue;
             }
@@ -162,7 +163,7 @@ public class Test {
             j--;
         }
         StringBuilder sb = new StringBuilder();
-        for (char c : chars){
+        for (char c : chars) {
             sb.append(c);
         }
         return sb.toString();
@@ -170,32 +171,33 @@ public class Test {
 
     /**
      * 925. 长按键入
+     *
      * @param name
      * @param typed
      * @return boolean
      */
     static boolean isLongPressedName(String name, String typed) {
-        int name_start = 0,typed_start = 0;
+        int name_start = 0, typed_start = 0;
         char[] name_chars = name.toCharArray();
         char[] typed_chars = typed.toCharArray();
-        while(name_start<name_chars.length && typed_start<typed_chars.length){
-            if(name_chars[name_start] == typed_chars[typed_start]){
+        while (name_start < name_chars.length && typed_start < typed_chars.length) {
+            if (name_chars[name_start] == typed_chars[typed_start]) {
                 name_start++;
                 typed_start++;
                 continue;
             }
-            if(name_start!=0 && name_chars[name_start-1] == typed_chars[typed_start]){
+            if (name_start != 0 && name_chars[name_start - 1] == typed_chars[typed_start]) {
                 typed_start++;
-            }else{
+            } else {
                 return false;
             }
         }
-        if(name_start<name_chars.length){
+        if (name_start < name_chars.length) {
             return false;
         }
-        if(typed_start<typed_chars.length){
-            for(int i = typed_start-1;i<typed_chars.length;i++){
-                if(typed_chars[i]!=typed_chars[typed_start-1]){
+        if (typed_start < typed_chars.length) {
+            for (int i = typed_start - 1; i < typed_chars.length; i++) {
+                if (typed_chars[i] != typed_chars[typed_start - 1]) {
                     return false;
                 }
             }
@@ -205,10 +207,10 @@ public class Test {
 
     static int numUniqueEmails(String[] emails) {
         Set set = new HashSet<String>();
-        for(int i = 0;i < emails.length;i++){
-            String s = emails[i].substring(0,emails[i].indexOf('@')).replaceAll("\\.","");
-            if (s.indexOf('+')!=-1){
-                s = s.substring(0,s.indexOf('+'));
+        for (int i = 0; i < emails.length; i++) {
+            String s = emails[i].substring(0, emails[i].indexOf('@')).replaceAll("\\.", "");
+            if (s.indexOf('+') != -1) {
+                s = s.substring(0, s.indexOf('+'));
             }
             StringBuilder sb = new StringBuilder();
             sb.append(s + emails[i].substring(emails[i].indexOf('@')));
@@ -221,58 +223,62 @@ public class Test {
     /**
      * 1071. 字符串的最大公因子
      * 欧几里得算法，求最大公约数
+     *
      * @param str1
      * @param str2
      * @return String
      */
     static String gcdOfStrings(String str1, String str2) {
-        if (!(str1+str2).equals(str2+str1)){ // 直接判断是两者是否有最大公约数
+        if (!(str1 + str2).equals(str2 + str1)) { // 直接判断是两者是否有最大公约数
             return "";
         }
-        return str1.substring(0,gcd(str1.length(),str2.length()));
+        return str1.substring(0, gcd(str1.length(), str2.length()));
     }
+
     // 欧几里得算法
-    static int gcd(int a,int b){
-        return b==0?a:gcd(b,a%b);
+    static int gcd(int a, int b) {
+        return b == 0 ? a : gcd(b, a % b);
     }
 
     /**
      * 1108、IP 地址无效化
+     *
      * @param address
      * @return String
      */
     static String defangIPaddr(String address) {
         // 注意字符.的转义字符
-        return address.replaceAll("\\.","[\\.]");
+        return address.replaceAll("\\.", "[\\.]");
     }
 
     /**
      * 1189. “气球” 的最大数量
+     *
      * @param text
      * @return int
      */
     static int maxNumberOfBalloons(String text) {
         String ballon = "balon";
         int len = text.length();
-        Map<Character,Integer> map = new TreeMap<Character,Integer>();
-        for(int i = 0;i < len;i++){
-            if(ballon.indexOf(text.substring(i,i+1))!=-1){
-                if(map.keySet().contains(text.charAt(i))){
-                    map.put(text.charAt(i),map.get(text.charAt(i))+1);
-                }else{
-                    map.put(text.charAt(i),1);
+        Map<Character, Integer> map = new TreeMap<Character, Integer>();
+        for (int i = 0; i < len; i++) {
+            if (ballon.indexOf(text.substring(i, i + 1)) != -1) {
+                if (map.keySet().contains(text.charAt(i))) {
+                    map.put(text.charAt(i), map.get(text.charAt(i)) + 1);
+                } else {
+                    map.put(text.charAt(i), 1);
                 }
             }
         }
         int result = 0;
-        if(map.keySet().size()<5){
+        if (map.keySet().size() < 5) {
             return result;
         }
-        result = Math.min(Math.min(map.get('a'),map.get('b')),map.get('n'));
-        for(int i=result;i>0;i--){
-            if(map.get('l')/2 < result || map.get('o')/2 < result){
+        result = Math.min(Math.min(map.get('a'), map.get('b')), map.get('n'));
+        for (int i = result; i > 0; i--) {
+            if (map.get('l') / 2 < result || map.get('o') / 2 < result) {
                 result--;
-            }else{
+            } else {
                 break;
             }
         }
@@ -283,28 +289,29 @@ public class Test {
      * 1221. 分割平衡字符串
      * 分别对R，L出现的次数进行排序。之后比较每当R最大值遇到L最大值时，进行分割
      * 例子：RLRRLLRLRL -- 1123234455 -- 11 2323  44  55
-     *      RLLLLRRRLR -- 1123423455 -- 11 234234 55
+     * RLLLLRRRLR -- 1123423455 -- 11 234234 55
+     *
      * @param s
      * @return int
      */
     static int balancedStringSplit(String s) {
         int[] temp = new int[s.length()];
-        int len_R = 0,len_L = 0;
-        for(int i = 0;i < s.length();i++){
-            if(s.charAt(i)=='R'){
+        int len_R = 0, len_L = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == 'R') {
                 temp[i] = ++len_R;
-            }else{
+            } else {
                 temp[i] = ++len_L;
             }
         }
         int result = 0;
         int max = temp[0];
-        for(int i = 1;i < temp.length;i++){
-            if(max==temp[i]){
+        for (int i = 1; i < temp.length; i++) {
+            if (max == temp[i]) {
                 result++;
-            }else if(max<temp[i]){
+            } else if (max < temp[i]) {
                 max = temp[i];
-            }else{
+            } else {
                 continue;
             }
         }
@@ -315,20 +322,21 @@ public class Test {
      * 1309. 解码字母到整数映射
      * 从后向前查看，遇到#减3，否则减1。
      * 字符转数字，数字转字符；StringBuffer插入添加
+     *
      * @param s
      * @return String
      */
     static String freqAlphabets(String s) {
-        int len = s.length()-1;
+        int len = s.length() - 1;
         StringBuilder sb = new StringBuilder();
-        while(len>=0){
-            if(s.charAt(len)=='#'){
-                int i = Integer.parseInt(s.substring(len-2,len));
-                sb.insert(0,(char)(96+i));
+        while (len >= 0) {
+            if (s.charAt(len) == '#') {
+                int i = Integer.parseInt(s.substring(len - 2, len));
+                sb.insert(0, (char) (96 + i));
                 len = len - 3;
-            }else{
-                int i = Integer.parseInt(s.substring(len,len+1));
-                sb.insert(0,(char)(96+i));
+            } else {
+                int i = Integer.parseInt(s.substring(len, len + 1));
+                sb.insert(0, (char) (96 + i));
                 len = len - 1;
             }
         }
@@ -336,20 +344,20 @@ public class Test {
     }
 
     static int removePalindromeSub(String s) {
-        if(s.length()==0){
+        if (s.length() == 0) {
             return 0;
         }
         int result = 0;
         int f = 0;
         int len = s.length();
         StringBuilder sb = new StringBuilder();
-        while(f<s.length()){
-            sb.append(s.substring(f,len));
-            if(sb.toString().equals(sb.reverse().toString())){
+        while (f < s.length()) {
+            sb.append(s.substring(f, len));
+            if (sb.toString().equals(sb.reverse().toString())) {
                 result++;
                 f = len;
                 len = s.length();
-            }else{
+            } else {
                 len = len - 1;
             }
             sb.setLength(0);
@@ -359,38 +367,39 @@ public class Test {
 
     /**
      * 1370. 上升下降字符串
+     *
      * @param s
      * @return
      */
     static String sortString(String s) {
-        Map<Character,Integer> map = new TreeMap<Character,Integer>();
-        for(int i = 0;i < s.length();i++){
-            if(map.keySet().contains(s.charAt(i))){
-                map.put(s.charAt(i),map.get(s.charAt(i))+1);
-            }else{
-                map.put(s.charAt(i),1);
+        Map<Character, Integer> map = new TreeMap<Character, Integer>();
+        for (int i = 0; i < s.length(); i++) {
+            if (map.keySet().contains(s.charAt(i))) {
+                map.put(s.charAt(i), map.get(s.charAt(i)) + 1);
+            } else {
+                map.put(s.charAt(i), 1);
             }
         }
-        for (char c : map.keySet()){
+        for (char c : map.keySet()) {
             System.out.println(c + "--" + map.get(c));
         }
         StringBuilder result = new StringBuilder();
         int count = 0;
         int flag = 0;
-        while(flag<map.keySet().size()){
+        while (flag < map.keySet().size()) {
             flag = 0;
             StringBuilder temp = new StringBuilder();
-            for(char c : map.keySet()){
-                if(map.get(c)>0){
+            for (char c : map.keySet()) {
+                if (map.get(c) > 0) {
                     temp.append(c);
-                    map.put(c,map.get(c)-1);
-                }else{
+                    map.put(c, map.get(c) - 1);
+                } else {
                     flag++;
                 }
             }
-            if(count%2==0){
+            if (count % 2 == 0) {
                 result.append(temp.toString());
-            }else{
+            } else {
                 result.append(temp.reverse().toString());
             }
             count++;
@@ -400,6 +409,7 @@ public class Test {
 
     /**
      * 11、盛最大水的容器
+     *
      * @param height
      * @return
      */
@@ -423,13 +433,13 @@ public class Test {
         int max = 0;
         int left = 0;
         int right = height.length - 1;
-        while(left < right){
-            max = Math.max(max,(right-left)*Math.min(height[left],height[right]));
+        while (left < right) {
+            max = Math.max(max, (right - left) * Math.min(height[left], height[right]));
             // 在左边向右边或者右边向左边移动一次的话，要想可能得到的面积更大，那么就要移动其中较小的一根，才能有可能得到更大的面积
             // 因为下一次的底会变小，所以就要想办法让高变得更长一些。
-            if(height[left] < height[right]){
+            if (height[left] < height[right]) {
                 left++;
-            }else{
+            } else {
                 right--;
             }
         }
@@ -440,34 +450,35 @@ public class Test {
      * 15、三数之和
      * 给你一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？请你找出所有和为 0 且不重复的三元组。
      * 注意：答案中不可以包含重复的三元组。
+     *
      * @param nums
-     * @return List<List<Integer>>
+     * @return List<List < Integer>>
      */
     static List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> list2 = new ArrayList<List<Integer>>();
         Arrays.sort(nums);
-        for(int i = 0;i < nums.length;i++){
-            if(i>0 && nums[i] == nums[i-1]){
+        for (int i = 0; i < nums.length; i++) {
+            if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
             }
             int t = nums[i];
             int m = i + 1;
             int n = nums.length - 1;
-            while(m < n){
-                if(nums[m] + nums[n] + t > 0){
+            while (m < n) {
+                if (nums[m] + nums[n] + t > 0) {
                     n--;
-                }else if(nums[m] + nums[n] + t < 0){
+                } else if (nums[m] + nums[n] + t < 0) {
                     m++;
-                }else{
+                } else {
                     List<Integer> list1 = new ArrayList<Integer>();
                     list1.add(nums[i]);
                     list1.add(nums[m]);
                     list1.add(nums[n]);
                     list2.add(list1);
-                    while(m < n && nums[m]==nums[m+1]){
+                    while (m < n && nums[m] == nums[m + 1]) {
                         m++;
                     }
-                    while(n > m && nums[n]==nums[n-1]){
+                    while (n > m && nums[n] == nums[n - 1]) {
                         n--;
                     }
                     m++;
@@ -481,6 +492,7 @@ public class Test {
     /**
      * 16. 最接近的三数之和
      * 这里使用的方法，与第15题的方法一样。
+     *
      * @param nums
      * @param target
      * @return
@@ -491,26 +503,26 @@ public class Test {
         int min_dif = 0x7fffffff;
         int result = 0;
         // for循环选定一个三个数字中的其中一个
-        for(int i = 0;i < len;i++){
+        for (int i = 0; i < len; i++) {
             // 去除重复的三个数字中的第一个数字
-            if(i > 0 && nums[i] == nums[i-1]){
+            if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
             }
             int s = i + 1;
             int e = len - 1;
             // 开始对后面的数进行双指针循环
-            while(s < e){
+            while (s < e) {
                 // 如果两者差值小于当前差值min_dif，则更新最小差值，更新result
-                if(min_dif > Math.abs(target - nums[i] - nums[s] - nums[e])){
+                if (min_dif > Math.abs(target - nums[i] - nums[s] - nums[e])) {
                     min_dif = Math.abs(target - nums[i] - nums[s] - nums[e]);
                     result = nums[i] + nums[s] + nums[e];
                 }
                 // 如果三数之和大于目标值，可以将后面的指针向前移动一个位置，将三数之和进行减少操作
-                if(nums[i] + nums[s] + nums[e] > target){
+                if (nums[i] + nums[s] + nums[e] > target) {
                     e--;
-                }else if(nums[i] + nums[s] + nums[e] < target){  // 如果三数之和小于目标值，可以将后面的指针向后移动一个位置，将三数之和进行增加操作
+                } else if (nums[i] + nums[s] + nums[e] < target) {  // 如果三数之和小于目标值，可以将后面的指针向后移动一个位置，将三数之和进行增加操作
                     s++;
-                }else{
+                } else {
                     return target;  // 如果三数之和等于目标值，直接返回目标值
                 }
 
@@ -521,6 +533,7 @@ public class Test {
 
     /**
      * 18. 四数之和
+     *
      * @param nums
      * @param target
      * @return
@@ -533,33 +546,33 @@ public class Test {
         List<List<Integer>> list2 = new ArrayList<List<Integer>>();
         Arrays.sort(nums);
         // 首先选出不重复的单个元素，然后更改target的值，然后按照三数之和等于更改后的target的方法，对后面的元素进行求三数之和。
-        for(int i = 0;i < nums.length-3;i++){
-            if(i > 0 && nums[i]==nums[i-1]){
+        for (int i = 0; i < nums.length - 3; i++) {
+            if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
             }
             int temp = target + nums[i] * (-1);
-            for(int j = i+1;j < nums.length;j++){
-                if(j>i+1 && nums[j]==nums[j-1]){ // 注意这里的j>i+1，当nums是{0,0,0,0}的话没有j>i+1的话，会错。这里的nums[j]==nums[j-1]中，j可以和i所处位置元素可以相同，但是不可以与后面元素的相同。
+            for (int j = i + 1; j < nums.length; j++) {
+                if (j > i + 1 && nums[j] == nums[j - 1]) { // 注意这里的j>i+1，当nums是{0,0,0,0}的话没有j>i+1的话，会错。这里的nums[j]==nums[j-1]中，j可以和i所处位置元素可以相同，但是不可以与后面元素的相同。
                     continue;
                 }
                 int m = j + 1;
                 int n = nums.length - 1;
-                while(m < n){
-                    if(nums[j] + nums[m] + nums[n] > temp){
+                while (m < n) {
+                    if (nums[j] + nums[m] + nums[n] > temp) {
                         n--;
-                    }else if(nums[j] + nums[m] + nums[n] < temp){
+                    } else if (nums[j] + nums[m] + nums[n] < temp) {
                         m++;
-                    }else{
+                    } else {
                         List<Integer> list1 = new ArrayList<Integer>();
                         list1.add(nums[i]);
                         list1.add(nums[j]);
                         list1.add(nums[m]);
                         list1.add(nums[n]);
                         list2.add(list1);
-                        while(m < n && nums[m]==nums[m+1]){
+                        while (m < n && nums[m] == nums[m + 1]) {
                             m++;
                         }
-                        while(n > m && nums[n]==nums[n-1]){
+                        while (n > m && nums[n] == nums[n - 1]) {
                             n--;
                         }
                         m++;
@@ -577,27 +590,30 @@ public class Test {
     static class ListNode {
         int val;
         ListNode next;
-        ListNode(int val){
+
+        ListNode(int val) {
             this.val = val;
         }
-        ListNode(int val,ListNode next){
+
+        ListNode(int val, ListNode next) {
             this.val = val;
             this.next = next;
         }
     }
+
     static ListNode removeNthFromEnd(ListNode head, int n) {
         // pre指向要删除节点的前一个结点;p要和pre相隔n个位置，然后让p走到最后一个结点处，这时pre的下一个节点指向要删除的节点。
-        ListNode pre = head,p = head;
+        ListNode pre = head, p = head;
         // 先将p往后移动n个位置
-        for(int i = 1;i <= n;i++){
+        for (int i = 1; i <= n; i++) {
             p = p.next;
         }
         // p如果等于空，说明要删除的时头节点。
-        if(p==null){
+        if (p == null) {
             return head.next;
         }
         // pre和p同时往后移动，直到p达到最后一个节点
-        while(p.next!=null){
+        while (p.next != null) {
             pre = pre.next;
             p = p.next;
         }
@@ -608,37 +624,40 @@ public class Test {
 
     /**
      * 80. 删除有序数组中的重复项 II  -- 双指针
+     *
      * @param nums
      * @return
      */
     static int removeDuplicates(int[] nums) {
-        int pre=0,p=0;
+        int pre = 0, p = 0;
         int count = 0;
-        while(p<nums.length-count){
-            if(nums[pre]==nums[p]){
-                if(p-pre>=2){
-                    remove(nums,p);
+        while (p < nums.length - count) {
+            if (nums[pre] == nums[p]) {
+                if (p - pre >= 2) {
+                    remove(nums, p);
                     count++;
 //                    p++;
-                }else{
+                } else {
                     p++;
                 }
-            }else{
-                pre=p;
+            } else {
+                pre = p;
                 p++;
             }
         }
-        return nums.length-count;
+        return nums.length - count;
     }
-    static void remove(int[] nums,int target){
-        for(int i = target;i<nums.length-1;i++){
-            nums[i] = nums[i+1];
+
+    static void remove(int[] nums, int target) {
+        for (int i = target; i < nums.length - 1; i++) {
+            nums[i] = nums[i + 1];
         }
 //        nums[nums.length-1] = 0;
     }
 
     /**
      * 86. 分隔链表
+     *
      * @param head
      * @param x
      * @return
@@ -647,18 +666,18 @@ public class Test {
         ListNode min = new ListNode(0);
         ListNode max = new ListNode(0);
         ListNode pre = min;
-        ListNode p= max;
-        while(head!=null){
-            if(head.val<x){
+        ListNode p = max;
+        while (head != null) {
+            if (head.val < x) {
                 min.next = head;
                 min = min.next;
-            }else {
+            } else {
                 max.next = head;
                 max = max.next;
             }
             head = head.next;
         }
-        max.next=null;
+        max.next = null;
         min.next = p.next;
         return pre.next;
     }
@@ -666,15 +685,16 @@ public class Test {
     /**
      * 142. 环形链表 II
      * 检查有无循环链表--快慢指针
+     *
      * @param head
      * @return
      */
     static ListNode detectCycle(ListNode head) {
         List<ListNode> list = new ArrayList<ListNode>();
-        while(head!=null){
-            if(list.contains(head)){
+        while (head != null) {
+            if (list.contains(head)) {
                 return head;
-            }else{
+            } else {
                 list.add(head);
                 head = head.next;
             }
@@ -685,6 +705,7 @@ public class Test {
     /**
      * 209. 长度最小的子数组
      * 自己写的太烂了，纯暴力。
+     *
      * @param target
      * @param nums
      * @return
@@ -724,26 +745,27 @@ public class Test {
     }*/
     static int minSubArrayLen(int target, int[] nums) {
         int n = nums.length;
-        if(n==0){
+        if (n == 0) {
             return 0;
         }
         int ans = Integer.MAX_VALUE;
-        for(int i = 0;i < n;i++){
+        for (int i = 0; i < n; i++) {
             int sum = 0;
-            for(int j = i;j < n;j++){
+            for (int j = i; j < n; j++) {
                 sum = sum + nums[j];
-                if(sum >= target){
-                    ans = Math.min(ans,j-i+1);
+                if (sum >= target) {
+                    ans = Math.min(ans, j - i + 1);
                     break;
                 }
             }
         }
-        return ans==Integer.MAX_VALUE?0:ans;
+        return ans == Integer.MAX_VALUE ? 0 : ans;
     }
 
     /**
      * 287. 寻找重复数
      * 要寻求更好的方法，官方题解：1、二分查找；2、二进制；3、快慢指针
+     *
      * @param nums
      * @return
      */
@@ -751,8 +773,8 @@ public class Test {
         // 1、一个一个存入list/map中，然后在添加的时候检查list/map中是否已存在元素
         // 2、先排序，然后遍历数组，看第n个和第n+1个数是否相等   3ms 53.02%   38.3MB  79.74%
         Arrays.sort(nums);
-        for(int i = 0;i < nums.length-1;i++){
-            if(nums[i]==nums[i+1]){
+        for (int i = 0; i < nums.length - 1; i++) {
+            if (nums[i] == nums[i + 1]) {
                 return nums[i];
             }
         }
@@ -761,20 +783,21 @@ public class Test {
 
     /**
      * 424. 替换后的最长重复字符
+     * <p>
+     * 代码暴力垃圾，运行速度太慢
      *
-     *代码暴力垃圾，运行速度太慢
      * @param s
      * @param k
      * @return
      */
     static int characterReplacement(String s, int k) {
-        int max = k+1;
+        int max = k + 1;
         int count = 0;
-        for(int i = 0;i < s.length()-k;i++){
+        for (int i = 0; i < s.length() - k; i++) {
             int temp = k;
-            for(int j = i;j < s.length();j++){
-                if(s.charAt(i)!=s.charAt(j)){
-                    if(temp<=0){
+            for (int j = i; j < s.length(); j++) {
+                if (s.charAt(i) != s.charAt(j)) {
+                    if (temp <= 0) {
                         break;
                     }
                     temp--;
@@ -782,9 +805,9 @@ public class Test {
                 count++;
             }
             // 注意这里对max的赋值问题
-            if(count+temp < s.length()){
-                max = Math.max(max,count+temp);
-            }else{
+            if (count + temp < s.length()) {
+                max = Math.max(max, count + temp);
+            } else {
                 max = s.length();
             }
             count = 0;
@@ -793,72 +816,74 @@ public class Test {
     }
 
     // 双指针 -- 滑动窗口
-    static int characterReplacement2(String s,int k){
+    static int characterReplacement2(String s, int k) {
         int[] num = new int[26]; //滑动窗口中每个字符出现的次数
-        int left=0;
-        int right=0;
+        int left = 0;
+        int right = 0;
         int maxn = 0;
         int n = s.length();
-        while(right<n){
-            num[s.charAt(right)-'A']++;
-            maxn = Math.max(maxn,num[s.charAt(right)-'A']);
-            if(right-left+1-maxn>k){ // 如果滑动窗口长度-滑动窗口中字符出现的最大次数>k的话，说明滑动窗口并不符合条件
+        while (right < n) {
+            num[s.charAt(right) - 'A']++;
+            maxn = Math.max(maxn, num[s.charAt(right) - 'A']);
+            if (right - left + 1 - maxn > k) { // 如果滑动窗口长度-滑动窗口中字符出现的最大次数>k的话，说明滑动窗口并不符合条件
                 num[s.charAt(left) - 'A']--; // 因为滑动窗口左边往前挪一位，所以滑动窗口中相应字符出现的次数要减一
                 left++; // 滑动窗口左边往前挪一位
             }
             right++;
         }
-        return right-left; // 因为最后right=n所以不用right-left+1；返回滑动窗口的长度的原因是因为，要让right走到底，然后如果当前right加入滑动窗口符合条件那么滑动窗口长度+1，否则left++，right++来使滑动窗口长度不变进行滑动。
+        return right - left; // 因为最后right=n所以不用right-left+1；返回滑动窗口的长度的原因是因为，要让right走到底，然后如果当前right加入滑动窗口符合条件那么滑动窗口长度+1，否则left++，right++来使滑动窗口长度不变进行滑动。
     }
 
     /**
      * 457. 环形数组是否存在循环
      * 双指针判断是否存在循环，不存在的话所经过的元素位置置为0来减少时间复杂度
+     *
      * @param nums
      * @param k
      */
-    static void setZero(int[] nums,int k){
+    static void setZero(int[] nums, int k) {
         int j = k;
-        while(true){
-            j = (k + nums[k]+1000*nums.length) % nums.length;
-            if(nums[j]==0 || nums[k]*nums[j] < 0){
-                nums[k]=0;
+        while (true) {
+            j = (k + nums[k] + 1000 * nums.length) % nums.length;
+            if (nums[j] == 0 || nums[k] * nums[j] < 0) {
+                nums[k] = 0;
                 break;
             }
-            nums[k]=0;
+            nums[k] = 0;
             k = j;
         }
     }
+
     static boolean circularArrayLoop(int[] nums) {
-        for(int i = 0;i < nums.length;i++){
-            int m=i,n=i;
-            int lastm,lastn;
+        for (int i = 0; i < nums.length; i++) {
+            int m = i, n = i;
+            int lastm, lastn;
             // 利用快慢指针
-            while(true){
+            while (true) {
                 // 慢指针，做一次
                 lastm = m;
                 // 加上1000*nums.length的原因是因为如果m为0时，nums[m]为-100，那么不能直接取余，要是要最少加个nums.length才可以。
                 // 因为数组中的元素是-1000-1000，所以只加个num.length是不可以的。所以最少还要加上1000*nums.length才可以
                 // 为什么1000还要乘于nums.length?因为nums.length最大可以是5000，5000是大于1000的，所以只加1000是不可以的，因为如果m=0，nums[m]=-1000,而nums.length=5000的话，只加1000就不可以的。
-                m=(m+nums[m]+1000*nums.length)%nums.length;
-                if(nums[m]==0 || m==lastm || nums[m]*nums[lastm]<0){
-                    setZero(nums,i);
+                m = (m + nums[m] + 1000 * nums.length) % nums.length;
+                if (nums[m] == 0 || m == lastm || nums[m] * nums[lastm] < 0) {
+                    setZero(nums, i);
                     break;
                 }
                 // 快指针，做两次
-                lastn =  n;
-                n=(n+nums[n]+1000*nums.length)%nums.length;
-                if(nums[n]==0 || n==lastn || nums[n]*nums[lastn]<0){
-                    setZero(nums,i);
+                lastn = n;
+                n = (n + nums[n] + 1000 * nums.length) % nums.length;
+                if (nums[n] == 0 || n == lastn || nums[n] * nums[lastn] < 0) {
+                    setZero(nums, i);
                     break;
                 }
                 lastn = n;
-                n=(n+nums[n]+1000*nums.length)%nums.length;
-                if(nums[n]==0 || n==lastn || nums[n]*nums[lastn]<0){
-                    setZero(nums,i);
+                n = (n + nums[n] + 1000 * nums.length) % nums.length;
+                if (nums[n] == 0 || n == lastn || nums[n] * nums[lastn] < 0) {
+                    setZero(nums, i);
                     break;
                 }
-                if(m==n){
+                if (m == n) {
                     return true;
                 }
             }
@@ -870,6 +895,7 @@ public class Test {
      * 524. 通过删除字母匹配到字典里最长单词
      * 注意使用compareTo()方法的时候，不能只认为这个方法只会返回1，-1，0。对于字符串来说，返回的值是两个串首次出现不同字符的ASCII的差值,所以这里要分为>0,<0,以及==0三种情况
      * 以后还是直接使用>0,<0,=0三种情况吧，这样比较保险点 ^ ^.
+     *
      * @param s
      * @param dictionary
      * @return
@@ -878,25 +904,25 @@ public class Test {
 //        int index = 0;
         // 判断列表中的元素是否符合要求
         String result = "";
-        for(String dic:dictionary){
+        for (String dic : dictionary) {
             int i = 0;
             int j = 0;
-            while(i<s.length() && j<dic.length()){
-                if(s.charAt(i)==dic.charAt(j)){
+            while (i < s.length() && j < dic.length()) {
+                if (s.charAt(i) == dic.charAt(j)) {
                     i++;
                     j++;
-                }else{
+                } else {
                     i++;
                 }
             }
-            if(j>=dic.length()){
+            if (j >= dic.length()) {
                 // 筛选符合条件的字符串
-                if(dic.length()>result.length()){
+                if (dic.length() > result.length()) {
                     result = dic;
 //                    index = dictionary.indexOf(dic);
-                }else if(dic.length()==result.length()){
+                } else if (dic.length() == result.length()) {
                     System.out.println(dic.compareTo(result));
-                    result = dic.compareTo(result)<0?dic:result; // 比较字典顺序，注意这里的<0而不是==-1
+                    result = dic.compareTo(result) < 0 ? dic : result; // 比较字典顺序，注意这里的<0而不是==-1
                 }
             }
         }
@@ -905,31 +931,32 @@ public class Test {
 
     /**
      * 532. 数组中的 k-diff 数对
+     *
      * @param nums
      * @param k
      * @return
      */
     static int findPairs(int[] nums, int k) {
         Arrays.sort(nums); // 数组排序以方便双指针移动
-        int i = 0,j = 1; // 因为只有数组长度>=2的时候才可能会有解，所以这里直接将后指针指向数组中索引为1的位置
+        int i = 0, j = 1; // 因为只有数组长度>=2的时候才可能会有解，所以这里直接将后指针指向数组中索引为1的位置
         int result = 0; // 置结果为0
-        while(i<nums.length-1 && j<nums.length){ // 当前指针位置在数组的前n-1个位置，后指针在数组中的前n个位置的时候，才可以进行循环
-            if(nums[j]-nums[i]==k){ // 如果符合条件，结果值+1，两个指针都+1
+        while (i < nums.length - 1 && j < nums.length) { // 当前指针位置在数组的前n-1个位置，后指针在数组中的前n个位置的时候，才可以进行循环
+            if (nums[j] - nums[i] == k) { // 如果符合条件，结果值+1，两个指针都+1
                 result++;
                 i++;
                 j++;
-                while(i< nums.length-1 && nums[i]==nums[i-1]){ // 去除前指针后面的重复值
+                while (i < nums.length - 1 && nums[i] == nums[i - 1]) { // 去除前指针后面的重复值
                     i++;
                 }
-                while(j < nums.length && nums[j]==nums[j-1]){ // 去除后指针后面的重复值
+                while (j < nums.length && nums[j] == nums[j - 1]) { // 去除后指针后面的重复值
                     j++;
                 }
-            }else if(nums[j]-nums[i]>k){ // 如果后指针数减去前指针指向的值大于k，那么i向后移动一个位置
+            } else if (nums[j] - nums[i] > k) { // 如果后指针数减去前指针指向的值大于k，那么i向后移动一个位置
                 i++;
-            }else{ // 如果后指针数减去前指针指向的值小于k，那么后向前移动一个位置
+            } else { // 如果后指针数减去前指针指向的值小于k，那么后向前移动一个位置
                 j++;
             }
-            if(i==j){ // 每一次循环中会移动i和j，两个索引有可能会相同，这是就要将两个指针分开；
+            if (i == j) { // 每一次循环中会移动i和j，两个索引有可能会相同，这是就要将两个指针分开；
                 j++;
             }
         }
@@ -938,6 +965,7 @@ public class Test {
 
     /**
      * 567、字符串的排列
+     *
      * @param s1
      * @param s2
      * @return
@@ -1017,23 +1045,23 @@ public class Test {
         // return false;
 
         // 3、双指针，滑动窗口
-        int n = s1.length(),m=s2.length();
-        if(n > m){
+        int n = s1.length(), m = s2.length();
+        if (n > m) {
             return false;
         }
         int[] cnt = new int[26];
-        for(int i = 0;i < n;i++){
-            cnt[s1.charAt(i)-'a']--;
+        for (int i = 0; i < n; i++) {
+            cnt[s1.charAt(i) - 'a']--;
         }
-        int left=0;
-        for(int right=0;right < m;right++){
-            int x = s2.charAt(right)-'a';
+        int left = 0;
+        for (int right = 0; right < m; right++) {
+            int x = s2.charAt(right) - 'a';
             cnt[x]++;
-            while(cnt[x]>0){
-                cnt[s2.charAt(left)-'a']--;
+            while (cnt[x] > 0) {
+                cnt[s2.charAt(left) - 'a']--;
                 left++;
             }
-            if(right-left+1==n){
+            if (right - left + 1 == n) {
                 return true;
             }
         }
@@ -1043,6 +1071,7 @@ public class Test {
     /**
      * 713. 乘积小于K的子数组
      * 以right结尾的符合条件的子数组的个数
+     *
      * @param nums
      * @param k
      * @return
@@ -1070,17 +1099,17 @@ public class Test {
         int result = 0;
         int left = 0;
         int product = 1;
-        if(k<=1 || nums.length<1){
+        if (k <= 1 || nums.length < 1) {
             return 0;
         }
         // 这里使用滑动窗口来计算包括right指定的元素的符合条件的子数组的个数
-        for (int right = 0;right < nums.length;right++){
+        for (int right = 0; right < nums.length; right++) {
             product *= nums[right];
-            while (product >= k){
+            while (product >= k) {
                 product /= nums[left++];
             }
             // 这样求出来的数组是以right指向的元素结尾的的符合条件的子数组的个数
-            result+=right-left+1;
+            result += right - left + 1;
         }
         return result;
     }
@@ -1088,19 +1117,20 @@ public class Test {
     /**
      * 763. 划分字母区间
      * 好像没怎么用到双指针，还是自己逻辑不够清晰
+     *
      * @param S
      * @return
      */
     static List<Integer> partitionLabels(String S) {
         List<Integer> list = new ArrayList<Integer>();
-        Map<Character,Integer> map = new HashMap<Character,Integer>();
-        for(int i = 0;i < S.length();i++){
-            map.put(S.charAt(i),i); // 存放字符最后出现的位置
+        Map<Character, Integer> map = new HashMap<Character, Integer>();
+        for (int i = 0; i < S.length(); i++) {
+            map.put(S.charAt(i), i); // 存放字符最后出现的位置
         }
-        int start = 0,end = 0; // 定义刚开始的某个阶段的首尾指针
-        for(int i = 0;i < S.length();i++){
-            end = Math.max(end,map.get(S.charAt(i))); // 在每次循环中判断该字符最后出现的位置是否在该阶段的范围内，如果不在就将它最后出现的位置赋值给end
-            if(i == end){ // 当i循环到这一阶段的最终位置后，向list中添加范围(end-start+1)
+        int start = 0, end = 0; // 定义刚开始的某个阶段的首尾指针
+        for (int i = 0; i < S.length(); i++) {
+            end = Math.max(end, map.get(S.charAt(i))); // 在每次循环中判断该字符最后出现的位置是否在该阶段的范围内，如果不在就将它最后出现的位置赋值给end
+            if (i == end) { // 当i循环到这一阶段的最终位置后，向list中添加范围(end-start+1)
                 list.add(end - start + 1);
                 start = end + 1; // 对start重新赋值
             }
@@ -1110,6 +1140,7 @@ public class Test {
 
     /**
      * 826. 安排工作以达到最大收益
+     *
      * @param difficulty
      * @param profit
      * @param worker
@@ -1125,9 +1156,9 @@ public class Test {
         }
         Collections.sort(list1);
         int sum = 0;
-        for(int i = 0;i < worker.length;i++){
-            for(int j = list1.size()-1;j >= 0;j--){
-                if(worker[i]>=difficulty[list2.indexOf(list1.get(j))]){
+        for (int i = 0; i < worker.length; i++) {
+            for (int j = list1.size() - 1; j >= 0; j--) {
+                if (worker[i] >= difficulty[list2.indexOf(list1.get(j))]) {
                     sum += list1.get(j);
                     break;
                 }
@@ -1139,32 +1170,123 @@ public class Test {
     /**
      * 递归标签
      * 2. 两数相加  递归方式
+     *
      * @param l1
      * @param l2
      * @return
      */
     static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         // 后面数字表示进位
-        return addTwoNumbers2(l1,l2,0);
+        return addTwoNumbers2(l1, l2, 0);
     }
-    static ListNode addTwoNumbers2(ListNode l1,ListNode l2,int a){
-        if(l1==null && l2==null){
-            return a==0?null:new ListNode(a);
+
+    static ListNode addTwoNumbers2(ListNode l1, ListNode l2, int a) {
+        if (l1 == null && l2 == null) {
+            return a == 0 ? null : new ListNode(a);
         }
-        if(l1!=null){
-            a+=l1.val;
+        if (l1 != null) {
+            a += l1.val;
             l1 = l1.next;
         }
-        if(l2!=null){
-            a+=l2.val;
-            l2=l2.next;
+        if (l2 != null) {
+            a += l2.val;
+            l2 = l2.next;
         }
-        return new ListNode(a%10,addTwoNumbers2(l1,l2,a/10));
+        return new ListNode(a % 10, addTwoNumbers2(l1, l2, a / 10));
     }
 
     /**
      * 图
      */
+
+    /**
+     * 133、克隆图
+     * 分为深度优先搜索和广度优先搜索
+     * 这里用的深度优先搜索
+     * 还需要刷第二遍
+     */
+    class Node {
+        public int val;
+        public List<Node> neighbors;
+
+        public Node() {
+            val = 0;
+            neighbors = new ArrayList<Node>();
+        }
+
+        public Node(int _val) {
+            val = _val;
+            neighbors = new ArrayList<Node>();
+        }
+
+        public Node(int _val, ArrayList<Node> _neighbors) {
+            val = _val;
+            neighbors = _neighbors;
+        }
+    }
+
+    private HashMap<Node, Node> visted = new HashMap<Node, Node>();
+
+    public Node cloneGraph(Node node) {
+        if (node == null) {
+            return null;
+        }
+        // 递归边界
+        if (visted.containsKey(node)) {
+            return visted.get(node);
+        }
+        // 标记访问过的数据
+        Node cloneNode = new Node(node.val, new ArrayList<Node>());
+        visted.put(node, cloneNode);
+        for (Node neighbor : node.neighbors) {
+            cloneNode.neighbors.add(cloneGraph(neighbor));
+        }
+        return cloneNode;
+    }
+
+    /**
+     * 207. 课程表
+     * 深度优先搜索和广度优先搜索方式，这里采用的是深度优先搜索
+     * 需要刷第二遍
+     */
+    List<List<Integer>> edges;
+    int[] visted1;
+    boolean valid = true;
+
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        // 有向无环图
+        // 判断存不存在环
+        edges = new ArrayList<List<Integer>>();
+        for (int i = 0; i < numCourses; i++) {
+            edges.add(new ArrayList<Integer>());
+        }
+        visted1 = new int[numCourses];
+        for (int[] info : prerequisites) {
+            edges.get(info[1]).add(info[0]);
+        }
+        for (int i = 0; i < numCourses && valid; i++) {
+            if (visted1[i] == 0) {
+                dfs(i);
+            }
+        }
+        return valid;
+    }
+
+    public void dfs(int i) {
+        visted1[i] = 1;
+        for (int j : edges.get(i)) {
+            if (visted1[j] == 0) {
+                dfs(j);
+                if (!valid) {
+                    return;
+                }
+            } else if (visted1[j] == 1) {
+                valid = false;
+                return;
+            }
+        }
+        visted1[i] = 2;
+    }
 
 }
 
